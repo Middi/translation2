@@ -69,7 +69,10 @@ h1 {
   margin-bottom: 160px; }
 
 .container {
-  max-width: 1000px; }
+  max-width: 920px; }
+
+.navvie {
+  max-width: 1080px; }
 
 .table tr.White,
 .table tr.Black,
