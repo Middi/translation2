@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    .container
+        h1.text-center Edit
+
+        .form#newform
+            .row
+                .col-xs-10.col-sm-6.col-md-6.col-sm-offset-3.col-md-offset-3.col-xs-offset-1
+                    form(action='/edit/'+article._id, method='POST')
+                        .row
+                            .form-group
+                                label Polish
+                                input.form-control(type='text', name='polish', placeholder='Polish' value=article.polish)
+                        .row
+                            .form-group
+                                label Norwegian
+                                input.form-control(type='text', name='norwegian', placeholder='Norwegian' value=article.norwegian)
+                        .row
+                            .form-group
+                                label English
+                                input.form-control(type='text', name='english', placeholder='English' value=article.english)
+                        .row
+                            .form-group
+                                label Phonetics
+                                input.form-control(type='text', name='phonetic', placeholder='Phonetic' value=article.phonetic)
+                        .row
+                            .form-group
+                                label Category
+                                select.form-control(type='text', name='category' value=article.category)
+                                    option Numbers
+                                    option Time
+                                    option Days
+                                    option Months
+                                    option Colors
+                                    option Pleasantries
+                                    option Directions
+                                    option People
+                                    option Misc
+                        .row
+                            .form-group
+                                label ID
+                                input.form-control(type='text', name='cat_id', placeholder='Cat ID' value=article.cat_id)
+                                //- p= data
+                        .row
+                            input.btn.btn-red.btn-block.btn-lg(type='submit')

@@ -1,0 +1,1 @@
+$("#myTabs a").click(function(a){a.preventDefault(),$(this).tab("show")}),window.location.href.indexOf("norwegian")>-1&&$(".flag").attr("src","/images/norway.png");

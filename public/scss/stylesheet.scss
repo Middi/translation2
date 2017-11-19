@@ -1,0 +1,175 @@
+@import "colors";
+@import "typography";
+
+* {
+    text-rendering:  optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:  grayscale;
+}
+
+// ---- Nav Bar ---- /
+
+.navbar-default {
+    background-color: $brand;
+    background: $brand linear-gradient(180deg, #20a8e9, rgba(30, 158, 220, .5)) repeat-x;}
+
+.navbar-brand>img {
+    display: inline-block;
+    width: 24px;
+    height: auto;
+    margin: 0 4px 2px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {border: none}
+
+.navbar-default .navbar-toggle .icon-bar {background-color: $white}
+
+.navbar-default .navbar-toggle:hover {background-color: darken($brand, 5)}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: white;
+
+}
+
+.container-main {
+    margin-top: 60px;
+    margin-bottom: 160px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+
+
+// --- TABLE COLOURED --- //
+
+.table tr.White,
+.table tr.Black,
+.table tr.Red,
+.table tr.Yellow,
+.table tr.Green,
+.table tr.Blue,
+.table tr.Orange,
+.table tr.Colours,
+.table tr.Grey {
+    font-weight: 600;
+    color: $black;
+    transition: all 0.4s ease;
+    cursor: default !important;
+}
+
+.table tr.Colours {color: $pink !important}
+
+// BLACK & WHITE
+.table tr.Black, .table tr.White {color: $black !important}
+
+// RED
+.table tr.Red, .red {color: $red !important}
+
+// YELLOW
+.table tr.Yellow, .yellow {color: darken($yellow, 25) !important}
+
+// GREEN
+.table tr.Green, .green {color: $green !important}
+
+// BLUE
+.table tr.Blue, .blue {color: $blue !important}
+
+// ORANGE
+.table tr.Orange, .orange {color: $orange !important}
+
+// GREY
+.table tr.Grey, .grey {color: darken($grey, 30) !important}
+
+
+.nav-tabs {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-box;  
+    display: -moz-box;
+}
+
+.nav-tabs>li {
+      float:none;
+      margin-left: -1px;
+}
+
+.nav-tabs>li>a {
+    color: $black;
+font-weight: 500;
+}
+
+.nav-tabs>li.active>a {
+    color: $white;
+    font-weight: 600;
+    background-color: darken($brand,3);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    border-bottom: 1px solid darken($brand,3);
+    transition: all 0.4s ease;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+    color: $white;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid  darken($brand,3);
+    background-color:  darken($brand,3);
+}
+
+.nav-tabs > li.active > a:hover {border: none;
+    border-bottom: 1px solid  darken($brand,3);
+    background-color:  darken($brand,3);
+    color: $white;
+}
+
+.active-plus {
+    background-color: $grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.nav>li.active-plus>a:hover {
+    background-color: $grey;
+    border-color: $grey;
+}
+
+
+.tab-pane {padding: 14px}
+
+.tab-content {
+    border: 1px solid $grey;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+table thead tr th {padding: 20px 10px !important}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.edit {
+    width: 80px;
+}
+
+#newform {margin: 50px}
+
+.btn-red {
+    background-color: $brand;
+    color: $white;   
+    transition: all 0.4s ease; 
+    border: 2px solid $brand;
+    font-weight: 600;
+    &:hover {
+            color: $brand;
+            background-color: darken($white, 1);
+        }
+}
+
+
+@import "media-queries";

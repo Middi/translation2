@@ -1,0 +1,46 @@
+doctype html
+html(lang="pl")
+    head
+        title Language Champ
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name="google" value="notranslate")
+        link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+
+        link(rel='stylesheet' href='/css/stylesheet.css')
+    body
+        // Static navbar
+        nav.navbar.navbar-default.navbar-static-top
+            .container.navvie
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/')
+                        img.flag(src="/images/poland.png")
+                        | Language
+                        span Champ
+                #navbar.navbar-collapse.collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li.dropdown
+                                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                                    | Language 
+                                    span.caret
+                                ul.dropdown-menu
+                                    li
+                                        a(href='/') Polski
+                                    li
+                                        a(href='/norwegian') Norwegian
+                        if !currentUser
+                            li
+                                a(href='/login') Login
+                        else
+                            li
+                                a(href='/new')= currentUser.username
+        main
+            block content
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+        script(src='/js/main.js')

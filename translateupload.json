@@ -1,0 +1,198 @@
+[
+{
+        "_id" : ObjectId("593ad9592870d2aa1f73bd53"),
+        "polish" : "Kolory",
+        "english" : "Colours",
+        "phonetic" : "KullorE",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593af5d02870d2aa1f73bd54"),
+        "polish" : "Biały",
+        "english" : "White",
+        "phonetic" : "Beowwie",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593af6692870d2aa1f73bd55"),
+        "polish" : "Poniedziałek",
+        "english" : "Monday",
+        "phonetic" : "PonieJowek",
+        "category" : "Days"
+}
+{
+        "_id" : ObjectId("593afad22870d2aa1f73bd56"),
+        "polish" : "Wtorek",
+        "english" : "Tuesday",
+        "phonetic" : "VeTourEk",
+        "category" : "Days"
+}
+{
+        "_id" : ObjectId("593afae22870d2aa1f73bd57"),
+        "polish" : "Środa",
+        "english" : "Wednesday",
+        "phonetic" : "ShiRoda",
+        "category" : "Days"
+}
+{
+        "_id" : ObjectId("593afae32870d2aa1f73bd58"),
+        "polish" : "Czwartek",
+        "english" : "Thursday",
+        "phonetic" : "ChFarTek",
+        "category" : "Days"
+}
+{
+        "_id" : ObjectId("593afae52870d2aa1f73bd59"),
+        "polish" : "Piątek",
+        "english" : "Friday",
+        "phonetic" : "PeeonTek",
+        "category" : "Days"
+}
+{
+        "_id" : ObjectId("593afae52870d2aa1f73bd5a"),
+        "polish" : "Sobota",
+        "english" : "Saturday",
+        "phonetic" : "SoBotta",
+        "category" : "Days"
+}
+{
+        "_id" : ObjectId("593afbc72870d2aa1f73bd5b"),
+        "polish" : "Niedziela",
+        "english" : "Sunday",
+        "phonetic" : "Nigella",
+        "category" : "Days"
+}
+{
+        "_id" : ObjectId("593afd8e2870d2aa1f73bd5c"),
+        "polish" : "Czarny",
+        "english" : "Black",
+        "phonetic" : "Charnie",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593afd8f2870d2aa1f73bd5d"),
+        "polish" : "Czerwony",
+        "english" : "Red",
+        "phonetic" : "SherVonnie",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593afd9f2870d2aa1f73bd5e"),
+        "polish" : "Żółty",
+        "english" : "Yellow",
+        "phonetic" : "ZoewTee",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593afda52870d2aa1f73bd5f"),
+        "polish" : "Zielony",
+        "english" : "Green",
+        "phonetic" : "???",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593afda62870d2aa1f73bd60"),
+        "polish" : "Niebieski",
+        "english" : "Blue",
+        "phonetic" : "???",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593afda72870d2aa1f73bd61"),
+        "polish" : "Pomarańczowy",
+        "english" : "Orange",
+        "phonetic" : "???",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593afda82870d2aa1f73bd62"),
+        "polish" : "Szary",
+        "english" : "Grey",
+        "phonetic" : "???",
+        "category" : "Colors"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5ba"),
+        "polish" : "Styczeń",
+        "english" : "January",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5bb"),
+        "polish" : "Luty",
+        "english" : "February",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5bc"),
+        "polish" : "Marzec",
+        "english" : "March",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5bd"),
+        "polish" : "Kwiecień",
+        "english" : "April",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5be"),
+        "polish" : "Maj",
+        "english" : "May",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5bf"),
+        "polish" : "Kwiecień",
+        "english" : "June",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5c0"),
+        "polish" : "Lipiec",
+        "english" : "July",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5c1"),
+        "polish" : "Sierpień",
+        "english" : "August",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5c2"),
+        "polish" : "Wrzesień",
+        "english" : "September",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5c3"),
+        "polish" : "Październik",
+        "english" : "October",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5c4"),
+        "polish" : "Listopad",
+        "english" : "November",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+{
+        "_id" : ObjectId("593bdbd5e82038fbe14bb5c5"),
+        "polish" : "Grudzień",
+        "english" : "December",
+        "phonetic" : "???",
+        "category" : "Months"
+}
+]

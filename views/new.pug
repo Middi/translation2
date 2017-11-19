@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    .container
+        h1.text-center New Entry
+        .form#newform
+            .row
+                .col-xs-10.col-sm-6.col-md-6.col-sm-offset-3.col-md-offset-3.col-xs-offset-1
+                    form(action='/entry', method='POST')
+                        .row
+                            .form-group
+                                input.form-control(type='text', name='trans[polish]', placeholder='Polish')
+                        .row
+                            .form-group
+                                input.form-control(type='text', name='trans[norwegian]', placeholder='Norwegian')
+                        .row
+                            .form-group
+                                input.form-control(type='text', name='trans[english]', placeholder='English')
+                        .row
+                            .form-group
+                                input.form-control(type='text', name='trans[phonetic]', placeholder='Phonetic')
+                        .row
+                            .form-group
+                                select.form-control(type='text', name='trans[category]')
+                                    option Numbers
+                                    option Time
+                                    option Days
+                                    option Months
+                                    option Colors
+                                    option Pleasantries
+                                    option Directions
+                                    option People
+                                    option Misc
+                        .row
+                            .form-group
+                                input.form-control(type='text', name='trans[cat_id]', placeholder='Cat ID')
+                                //- p= data
+                        .row
+                            input.btn.btn-red.btn-block.btn-lg(type='submit')

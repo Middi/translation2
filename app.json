@@ -1,0 +1,6 @@
+{
+  "name": "Translation Table",
+  "description": "A nodeJS Translation helper for Polish with MongoDB, Express and Pug",
+  "website": "http://richardmiddleton.me",
+  "repository": "https://github.com/Middi/translation"
+}

@@ -1,0 +1,210 @@
+extends layout
+
+block content
+    .container.container-main
+        // Nav tabs
+        ul.nav.nav-tabs(role='tablist')
+            if currentUser
+                li.active-plus
+                    a(href='/new')
+                        i.fa.fa-plus.fa-lg(aria-hidden="true")
+            li.active(role='presentation')
+                a(href='#numbers', aria-controls='home', role='tab', data-toggle='tab') Numbers
+            li(role='presentation')
+                a(href='#times', aria-controls='profile', role='tab', data-toggle='tab') Times
+            li(role='presentation')
+                a(href='#days', aria-controls='messages', role='tab', data-toggle='tab') Days
+            li(role='presentation')
+                a(href='#months', aria-controls='settings', role='tab', data-toggle='tab') Months
+            li(role='presentation')
+                a(href='#colours', aria-controls='settings', role='tab', data-toggle='tab') Colours
+            li(role='presentation')
+                a(href='#pleasantries', aria-controls='settings', role='tab', data-toggle='tab') Pleasantries
+            li(role='presentation')
+                a(href='#directions', aria-controls='settings', role='tab', data-toggle='tab') Directions
+            li(role='presentation')
+                a(href='#people', aria-controls='settings', role='tab', data-toggle='tab') People
+            li(role='presentation')
+                a(href='#misc', aria-controls='settings', role='tab', data-toggle='tab') Misc
+        // Tab panes
+        .tab-content
+            #numbers.tab-pane.active(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                                if currentUser
+                                    th.edit Edit
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category == 'Numbers' && datas.polish
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+                                        if currentUser
+                                            td
+                                                a(href="/edit/"+datas._id) edit
+            #times.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                                if currentUser
+                                    th.edit Edit
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category =='Time' && datas.polish
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+                                        if currentUser
+                                            td
+                                                a(href="/edit/"+datas._id) edit
+            #days.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                                if currentUser
+                                    th.edit Edit
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category =='Days' && datas.polish
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+                                        if currentUser
+                                            td
+                                                a(href="/edit/"+datas._id) edit
+            #months.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                                if currentUser
+                                    th.edit Edit
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category =='Months' && datas.polish
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+                                        if currentUser
+                                            td
+                                                a(href="/edit/"+datas._id) edit
+            #colours.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                                if currentUser
+                                    th.edit Edit
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category =='Colors' && datas.polish
+                                    tr(class=datas.english)
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+                                        if currentUser
+                                            td
+                                                a(href="/edit/"+datas._id) edit
+            #pleasantries.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                                if currentUser
+                                    th.edit Edit
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category =='Pleasantries' && datas.polish
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+                                        if currentUser
+                                            td
+                                                a(href="/edit/"+datas._id) edit
+            #directions.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                                if currentUser
+                                    th.edit Edit
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category =='Directions' && datas.polish
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+                                        if currentUser
+                                            td
+                                                a(href="/edit/"+datas._id) edit
+            #people.tab-pane(role='tabpanel')
+                            .panel.panel-default
+                                table.table.table-bordered.table-striped
+                                    thead
+                                        tr
+                                            th English
+                                            th Polish
+                                            th Phonetics
+                                            if currentUser
+                                                th.edit Edit
+                                    tbody
+                                        each datas, i in data.sort({cat_id})
+                                            if datas.category =='People' && datas.polish
+                                                tr
+                                                    td= datas.english
+                                                    td= datas.polish
+                                                    td= datas.phonetic
+                                                    if currentUser
+                                                        td
+                                                            a(href="/edit/"+datas._id) edit
+            #misc.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                                if currentUser
+                                    th.edit Edit
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category =='Misc' && datas.polish
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+                                        if currentUser
+                                            td
+                                                a(href="/edit/"+datas._id) edit
