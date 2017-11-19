@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 var User = require("./models/user");
 
 
-var port = process.env.PORT;
+var port = process.env.PORT || 3000;
 
 
 /**
