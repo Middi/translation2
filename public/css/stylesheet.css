@@ -34,7 +34,7 @@ h1 {
 .navbar-default .navbar-nav > li > a:hover {
   color: #e6e5e5; }
 
-.fa {
+.fa-plus {
   color: rgba(32, 166, 231, 0.8); }
 
 * {
@@ -172,7 +172,11 @@ table {
   word-wrap: break-word; }
 
 .edit {
-  width: 60px; }
+  width: 50px;
+  text-align: center; }
+
+.edit-cell {
+  text-align: center; }
 
 #newform {
   margin: 50px; }

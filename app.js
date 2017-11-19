@@ -13,7 +13,6 @@ var User = require("./models/user");
 
 var port = process.env.PORT || 3000;
 
-
 /**
  * Load environment variables from .env file, where API keys and passwords are configurededit
  */
