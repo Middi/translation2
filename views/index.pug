@@ -33,187 +33,313 @@ block content
                     table.table.table-bordered.table-striped
                         thead
                             tr
-                                th English
-                                th Polish
-                                th Phonetics
-                                if currentUser
-                                    th.edit Edit
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category == 'Numbers' && datas.polish
+                            each datas, i in data
+                                if datas.category == 'Numbers'
                                     tr
-                                        td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
             #times.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
-                        thead
+                        thead                            
                             tr
-                                th English
-                                th Polish
-                                th Phonetics
-                                if currentUser
-                                    th.edit Edit
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Time' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Time' && datas.norwegian
                                     tr
-                                        td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
             #days.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
                         thead
                             tr
-                                th English
-                                th Polish
-                                th Phonetics
-                                if currentUser
-                                    th.edit Edit
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Days' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Days' && datas.norwegian
                                     tr
-                                        td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
             #months.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
                         thead
                             tr
-                                th English
-                                th Polish
-                                th Phonetics
-                                if currentUser
-                                    th.edit Edit
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Months' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Months' && datas.norwegian
                                     tr
-                                        td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
             #colours.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
                         thead
                             tr
-                                th English
-                                th Polish
-                                th Phonetics
-                                if currentUser
-                                    th.edit Edit
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Colors' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Colors' && datas.norwegian
                                     tr(class=datas.english)
-                                        td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
             #pleasantries.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
                         thead
                             tr
-                                th English
-                                th Polish
-                                th Phonetics
-                                if currentUser
-                                    th.edit Edit
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Pleasantries' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Pleasantries' && datas.norwegian
                                     tr
-                                        td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
             #directions.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
                         thead
                             tr
-                                th English
-                                th Polish
-                                th Phonetics
-                                if currentUser
-                                    th.edit Edit
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Directions' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Directions' && datas.norwegian
                                     tr
-                                        td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #people.tab-pane(role='tabpanel')
-                            .panel.panel-default
-                                table.table.table-bordered.table-striped
-                                    thead
-                                        tr
-                                            th English
-                                            th Polish
-                                            th Phonetics
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
                                             if currentUser
-                                                th.edit Edit
-                                    tbody
-                                        each datas, i in data.sort({cat_id})
-                                            if datas.category =='People' && datas.polish
-                                                tr
-                                                    td= datas.english
-                                                    td= datas.polish
-                                                    td= datas.phonetic
-                                                    if currentUser
-                                                        td.edit-cell
-                                                            a(href="/edit/"+datas._id) 
-                                                                i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+            #people.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
+                        tbody
+                            each datas, i in data
+                                if datas.category =='People' && datas.norwegian
+                                    tr
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
             #misc.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
                         thead
                             tr
-                                th English
-                                th Polish
-                                th Phonetics
-                                if currentUser
-                                    th.edit Edit
+                                if lang == 'norwegian'
+                                    th English
+                                    th Norwegian
+                                    if currentUser
+                                        th.edit Edit
+                                else if lang == 'polish'
+                                    th English
+                                    th Polish
+                                    th Phonetics
+                                    if currentUser
+                                        th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Misc' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Misc' && datas.norwegian
                                     tr
-                                        td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        if lang == 'norwegian' && datas.norwegian
+                                            td= datas.english
+                                            td= datas.norwegian
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+                                        else if lang == 'polish' && datas.polish
+                                            td= datas.english
+                                            td= datas.polish
+                                            td= datas.phonetic
+                                            if currentUser
+                                                td.edit-cell
+                                                    a(href="/edit/"+datas._id) 
+                                                        i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")

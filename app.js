@@ -13,6 +13,7 @@ var User = require("./models/user");
 
 var port = process.env.PORT || 3000;
 
+
 /**
  * Load environment variables from .env file, where API keys and passwords are configurededit
  */
@@ -69,8 +70,11 @@ var Trans = mongoose.model("polish", transSchema);
 
 app.get('/', function(req, res){
     Trans.find(function(err, data) {
-        res.render('index', {data: data});
-    });
+        res.render('index', {
+            data: data,
+            lang: 'polish'
+        });
+    }).sort({ cat_id: 1});
 });
 
 
@@ -96,7 +100,10 @@ app.post("/entry", function(req, res){
 
 app.get('/norwegian', function(req, res){
     Trans.find(function(err, data) {
-        res.render('norwegian', {data: data});
+        res.render('index', {
+            data: data,
+            lang: 'norwegian'
+        });
     }).sort({ cat_id: 1});
 });
 
