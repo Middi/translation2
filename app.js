@@ -17,10 +17,10 @@ var port = process.env.PORT || 3000;
 /**
  * Load environment variables from .env file, where API keys and passwords are configurededit
  */
-dotenv.load({ path: '.env' });
+// dotenv.load({ path: '.env' });
 
 // APP CONFIG
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect('mongodb://middi:youandme123@ds163701.mlab.com:63701/translation');
 app.set("view engine", "pug");
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
