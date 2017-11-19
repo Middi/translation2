@@ -72,7 +72,7 @@ app.get('/', function(req, res){
     Trans.find(function(err, data) {
         res.render('index', {
             data: data,
-            lang: 'polish'
+            lang: 'Polish'
         });
     }).sort({ cat_id: 1});
 });
@@ -102,7 +102,7 @@ app.get('/norwegian', function(req, res){
     Trans.find(function(err, data) {
         res.render('index', {
             data: data,
-            lang: 'norwegian'
+            lang: 'Norwegian'
         });
     }).sort({ cat_id: 1});
 });
