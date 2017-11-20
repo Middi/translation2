@@ -2,6 +2,16 @@ extends layout
 
 block content
     .container.container-main
+        .live-translate-container
+            textarea(id="source" class="translate-box" placeholder="English")
+            .switches
+                .sw1
+                    p#sw1-p English
+                div(id="switch", class="switch", attr=lang)
+                    i.fa.fa-arrow-circle-o-right.fa-lg
+                .sw2
+                    p#sw2-p= lang
+            textarea(id="output" class="translate-box" placeholder=lang)
         // Nav tabs
         - var cat = ['Numbers', 'Times', 'Days', 'Months', 'Colors', 'Pleasantries', 'Directions', 'People', 'Misc']
         ul.nav.nav-tabs(role='tablist')

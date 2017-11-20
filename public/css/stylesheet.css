@@ -74,43 +74,50 @@ h1 {
 .navvie {
   max-width: 1080px; }
 
-.table tr.White,
-.table tr.Black,
-.table tr.Red,
-.table tr.Yellow,
-.table tr.Green,
-.table tr.Blue,
-.table tr.Orange,
-.table tr.Colours,
-.table tr.Grey {
-  font-weight: 600;
-  color: #212121;
-  transition: all 0.4s ease;
-  cursor: default !important; }
+.live-translate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 260px;
+  border: 2px solid rgba(32, 166, 231, 0.8);
+  border-radius: 4px; }
 
-.table tr.Colours {
-  color: #F06292 !important; }
+.translate-box {
+  height: 60px;
+  resize: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 4px; }
 
-.table tr.Black, .table tr.White {
-  color: #212121 !important; }
+.switches {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  border-top: 1px solid rgba(32, 166, 231, 0.8);
+  border-bottom: 1px solid rgba(32, 166, 231, 0.8); }
 
-.table tr.Red, .red {
-  color: #ef5350 !important; }
+.sw1, .sw2 {
+  width: 42%;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(32, 166, 231, 0.8); }
+  .sw1 p, .sw2 p {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500; }
 
-.table tr.Yellow, .yellow {
-  color: #f6dc00 !important; }
-
-.table tr.Green, .green {
-  color: #81C784 !important; }
-
-.table tr.Blue, .blue {
-  color: #64B5F6 !important; }
-
-.table tr.Orange, .orange {
-  color: #FFB74D !important; }
-
-.table tr.Grey, .grey {
-  color: #949393 !important; }
+.switch {
+  width: 16%;
+  height: 40px;
+  line-height: 40px;
+  background: rgba(32, 166, 231, 0.8);
+  color: white; }
 
 .nav-tabs {
   overflow-x: auto;
@@ -150,19 +157,19 @@ h1 {
   color: #FFFFFF; }
 
 .active-plus {
-  background-color: #E0E0E0;
+  background-color: #c2c2c2;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
 
 .nav > li.active-plus > a:hover {
-  background-color: #E0E0E0;
-  border-color: #E0E0E0; }
+  background-color: #c2c2c2;
+  border-color: #c2c2c2; }
 
 .tab-pane {
   padding: 14px; }
 
 .tab-content {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #c2c2c2;
   border-top: none;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px; }

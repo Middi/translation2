@@ -44,47 +44,56 @@
     max-width: 1080px;
 }
 
-
-// --- TABLE COLOURED --- //
-
-.table tr.White,
-.table tr.Black,
-.table tr.Red,
-.table tr.Yellow,
-.table tr.Green,
-.table tr.Blue,
-.table tr.Orange,
-.table tr.Colours,
-.table tr.Grey {
-    font-weight: 600;
-    color: $black;
-    transition: all 0.4s ease;
-    cursor: default !important;
+.live-translate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 260px;
+    border: 2px solid $brand;
+    border-radius: 4px;
 }
 
-.table tr.Colours {color: $pink !important}
+.translate-box {
+    height: 60px;
+    resize: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 4px;
+}
 
-// BLACK & WHITE
-.table tr.Black, .table tr.White {color: $black !important}
+.switches {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border-top: 1px solid $brand;
+    border-bottom: 1px solid $brand;
+}
 
-// RED
-.table tr.Red, .red {color: $red !important}
+.sw1, .sw2 {
+    width: 42%;
+    height: 40px;
+    line-height: 40px;
+    background: $brand;
+    p {
+        font-size: 1.3rem;
+        color: white;
+        font-weight: 500;
+    }
+}
 
-// YELLOW
-.table tr.Yellow, .yellow {color: darken($yellow, 25) !important}
-
-// GREEN
-.table tr.Green, .green {color: $green !important}
-
-// BLUE
-.table tr.Blue, .blue {color: $blue !important}
-
-// ORANGE
-.table tr.Orange, .orange {color: $orange !important}
-
-// GREY
-.table tr.Grey, .grey {color: darken($grey, 30) !important}
-
+.switch {
+    width: 16%;
+    height: 40px;
+    line-height: 40px;
+    background: $brand;
+    color: white;
+}
 
 .nav-tabs {
     overflow-x: auto;
