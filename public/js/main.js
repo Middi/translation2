@@ -3,6 +3,9 @@ $('#myTabs a').click(function (e) {
   $(this).tab('show');
 });
 
+$('ul.nav.nav-tabs li:first-child').addClass('active');
+
+
 if (window.location.href.indexOf("norwegian") > -1) {
      $('.flag').attr('src', '/images/norway.png');
 }

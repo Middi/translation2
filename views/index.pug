@@ -3,29 +3,16 @@ extends layout
 block content
     .container.container-main
         // Nav tabs
+        
         ul.nav.nav-tabs(role='tablist')
             if currentUser
-                li.active-plus
+                li
                     a(href='/new')
                         i.fa.fa-plus.fa-lg(aria-hidden="true")
-            li.active(role='presentation')
-                a(href='#numbers', aria-controls='home', role='tab', data-toggle='tab') Numbers
-            li(role='presentation')
-                a(href='#times', aria-controls='profile', role='tab', data-toggle='tab') Times
-            li(role='presentation')
-                a(href='#days', aria-controls='messages', role='tab', data-toggle='tab') Days
-            li(role='presentation')
-                a(href='#months', aria-controls='settings', role='tab', data-toggle='tab') Months
-            li(role='presentation')
-                a(href='#colours', aria-controls='settings', role='tab', data-toggle='tab') Colours
-            li(role='presentation')
-                a(href='#pleasantries', aria-controls='settings', role='tab', data-toggle='tab') Pleasantries
-            li(role='presentation')
-                a(href='#directions', aria-controls='settings', role='tab', data-toggle='tab') Directions
-            li(role='presentation')
-                a(href='#people', aria-controls='settings', role='tab', data-toggle='tab') People
-            li(role='presentation')
-                a(href='#misc', aria-controls='settings', role='tab', data-toggle='tab') Misc
+            each val in ['Numbers', 'Times', 'Days', 'Months', 'Colours', 'Pleasantries', 'Directions', 'People', 'Misc']
+                li.tabs(role='presentation')
+                    a(href='#'+val.toLowerCase(), aria-controls='home', role='tab', data-toggle='tab')= val
+                
         // Tab panes
         .tab-content
             #numbers.tab-pane.active(role='tabpanel')
