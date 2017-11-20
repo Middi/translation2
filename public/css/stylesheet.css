@@ -99,7 +99,8 @@ body {
   background: none; }
 
 .output {
-  padding-top: 12px; }
+  padding-top: 12px;
+  height: 66px; }
 
 .switches {
   display: flex;
