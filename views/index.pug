@@ -3,20 +3,20 @@ extends layout
 block content
     .container.container-main
         // Nav tabs
-        
+        - var cat = ['Numbers', 'Times', 'Days', 'Months', 'Colors', 'Pleasantries', 'Directions', 'People', 'Misc']
         ul.nav.nav-tabs(role='tablist')
             if currentUser
                 li
                     a(href='/new')
                         i.fa.fa-plus.fa-lg(aria-hidden="true")
-            each val in ['Numbers', 'Times', 'Days', 'Months', 'Colours', 'Pleasantries', 'Directions', 'People', 'Misc']
-                li.tabs(role='presentation')
-                    a(href='#'+val.toLowerCase(), aria-controls='home', role='tab', data-toggle='tab')= val
+            each val in cat
+                li(id=val.toLowerCase()+'-tab').tabs(role='presentation')
+                    a(href='#'+val.toLowerCase(), aria-controls="profile", role='tab', data-toggle='tab')= val
                 
         // Tab panes
         .tab-content
-            #numbers.tab-pane.active(role='tabpanel')
-                .panel.panel-default
+            each val in cat
+                div(id=val.toLowerCase(), class='tab-pane', role='tabpanel')
                     table.table.table-bordered.table-striped
                         thead
                             tr
@@ -26,159 +26,7 @@ block content
                                     th.edit Edit
                         tbody
                             each datas, i in data
-                                if datas.category == 'Numbers' && datas[lang.toLowerCase()]
-                                    tr
-                                        td= datas.english
-                                        td= datas[lang.toLowerCase()]
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #times.tab-pane(role='tabpanel')
-                .panel.panel-default
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                            each datas, i in data
-                                if datas.category == 'Time' && datas[lang.toLowerCase()]
-                                    tr
-                                        td= datas.english
-                                        td= datas[lang.toLowerCase()]
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #days.tab-pane(role='tabpanel')
-                .panel.panel-default
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                            each datas, i in data
-                                if datas.category == 'Days' && datas[lang.toLowerCase()]
-                                    tr
-                                        td= datas.english
-                                        td= datas[lang.toLowerCase()]
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #months.tab-pane(role='tabpanel')
-                .panel.panel-default
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                            each datas, i in data
-                                if datas.category == 'Months' && datas[lang.toLowerCase()]
-                                    tr
-                                        td= datas.english
-                                        td= datas[lang.toLowerCase()]
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #colours.tab-pane(role='tabpanel')
-                .panel.panel-default
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                            each datas, i in data
-                                if datas.category == 'Colors' && datas[lang.toLowerCase()]
-                                    tr(class=datas.english)
-                                        td= datas.english
-                                        td= datas[lang.toLowerCase()]
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #pleasantries.tab-pane(role='tabpanel')
-                .panel.panel-default
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                            each datas, i in data
-                                if datas.category == 'Pleasantries' && datas[lang.toLowerCase()]
-                                    tr
-                                        td= datas.english
-                                        td= datas[lang.toLowerCase()]
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #directions.tab-pane(role='tabpanel')
-                .panel.panel-default
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                            each datas, i in data
-                                if datas.category == 'Directions' && datas[lang.toLowerCase()]
-                                    tr
-                                        td= datas.english
-                                        td= datas[lang.toLowerCase()]
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #people.tab-pane(role='tabpanel')
-                .panel.panel-default
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                            each datas, i in data
-                                if datas.category == 'People' && datas[lang.toLowerCase()]
-                                    tr
-                                        td= datas.english
-                                        td= datas[lang.toLowerCase()]
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href="/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
-            #misc.tab-pane(role='tabpanel')
-                .panel.panel-default
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                           each datas, i in data
-                                if datas.category == 'Misc' && datas[lang.toLowerCase()]
+                                if datas.category == val && datas[lang.toLowerCase()]
                                     tr
                                         td= datas.english
                                         td= datas[lang.toLowerCase()]
