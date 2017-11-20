@@ -1,31 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
   <head>
-    <title>Translation Helper</title>
+    <title>Language Champ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="google" value="notranslate">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
   </head>
   <body>
+    <!-- Static navbar-->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container navvie">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img class="flag" src="/images/poland.png">Language<span>Champ</span></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/">Polski</a></li>
+                <li><a href="/norwegian">Norwegian</a></li>
+              </ul>
+            </li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <main>
-      <div class="ui container">
-        <h1>Heading One</h1>
+      <div class="container container-main">
         <!-- Nav tabs-->
         <ul class="nav nav-tabs" role="tablist">
-          <li class="active" role="presentation"><a href="#numbers" aria-controls="home" role="tab" data-toggle="tab">Numbers</a></li>
-          <li role="presentation"><a href="#time" aria-controls="profile" role="tab" data-toggle="tab">Time</a></li>
-          <li role="presentation"><a href="#days" aria-controls="messages" role="tab" data-toggle="tab">Days</a></li>
-          <li role="presentation"><a href="#months" aria-controls="settings" role="tab" data-toggle="tab">Months</a></li>
+          <li class="tabs" role="presentation"><a href="#numbers" role="tab" data-toggle="tab">Numbers</a></li>
+          <li class="tabs" role="presentation"><a href="#times" role="tab" data-toggle="tab">Times</a></li>
+          <li class="tabs" role="presentation"><a href="#days" role="tab" data-toggle="tab">Days</a></li>
+          <li class="tabs" role="presentation"><a href="#months" role="tab" data-toggle="tab">Months</a></li>
+          <li class="tabs" role="presentation"><a href="#colours" role="tab" data-toggle="tab">Colours</a></li>
+          <li class="tabs" role="presentation"><a href="#pleasantries" role="tab" data-toggle="tab">Pleasantries</a></li>
+          <li class="tabs" role="presentation"><a href="#directions" role="tab" data-toggle="tab">Directions</a></li>
+          <li class="tabs" role="presentation"><a href="#people" role="tab" data-toggle="tab">People</a></li>
+          <li class="tabs" role="presentation"><a href="#misc" role="tab" data-toggle="tab">Misc</a></li>
         </ul>
         <!-- Tab panes-->
         <div class="tab-content">
-          <div class="tab-pane" id="time" role="tabpanel">...</div>
-          <div class="tab-pane" id="days" role="tabpanel">...</div>
-          <div class="tab-pane" id="months" role="tabpanel">...</div>
+          <div class="tab-pane active" id="#numbers" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane active" id="#times" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane active" id="#days" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane active" id="#months" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane active" id="#colours" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane active" id="#pleasantries" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane active" id="#directions" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane active" id="#people" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane active" id="#misc" role="tabpanel">
+            <div class="panel panel-default">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>gg</td>
+                    <td>nn</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
