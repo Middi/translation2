@@ -86,7 +86,8 @@ body {
   width: 100%;
   max-width: 360px;
   border: 2px solid rgba(32, 166, 231, 0.8);
-  border-radius: 4px; }
+  border-radius: 4px;
+  background-color: white; }
 
 .translate-box {
   height: 60px;
@@ -94,8 +95,11 @@ body {
   width: 100%;
   border: none;
   outline: none;
-  padding: 4px;
-  background: white; }
+  padding: 8px;
+  background: none; }
+
+.output {
+  padding-top: 12px; }
 
 .switches {
   display: flex;
