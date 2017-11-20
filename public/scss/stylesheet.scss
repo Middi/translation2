@@ -7,6 +7,10 @@
     -moz-osx-font-smoothing:  grayscale;
 }
 
+body {
+    background: rgba(248, 248, 248, 1);
+}
+
 // ---- Nav Bar ---- /
 
 .navbar-default {
@@ -63,7 +67,7 @@
     border: none;
     outline: none;
     padding: 4px;
-    background: none;
+    background: white;
 }
 
 .switches {
@@ -153,7 +157,6 @@ font-weight: 500;
     border-color: $grey;
 }
 
-
 .tab-pane {padding: 14px}
 
 .tab-content {
@@ -161,6 +164,7 @@ font-weight: 500;
     border-top: none;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    background: white;
 }
 
 table thead tr th {padding: 20px 10px !important}
@@ -169,6 +173,11 @@ table {
     table-layout: fixed;
     word-wrap: break-word;
 }
+
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: rgba(255, 255, 255, 1); // Choose your own color here
+ }
 
 .edit {
     width: 50px;
