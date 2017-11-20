@@ -50,7 +50,8 @@
     align-items: center;
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 260px;
+    width: 100%;
+    max-width: 360px;
     border: 2px solid $brand;
     border-radius: 4px;
 }
@@ -62,6 +63,7 @@
     border: none;
     outline: none;
     padding: 4px;
+    background: none;
 }
 
 .switches {

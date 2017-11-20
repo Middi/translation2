@@ -80,7 +80,8 @@ h1 {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 260px;
+  width: 100%;
+  max-width: 360px;
   border: 2px solid rgba(32, 166, 231, 0.8);
   border-radius: 4px; }
 
@@ -90,7 +91,8 @@ h1 {
   width: 100%;
   border: none;
   outline: none;
-  padding: 4px; }
+  padding: 4px;
+  background: none; }
 
 .switches {
   display: flex;
