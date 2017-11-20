@@ -10,7 +10,7 @@ block content
                     a(href='/new')
                         i.fa.fa-plus.fa-lg(aria-hidden="true")
             each val in cat
-                li(id=val.toLowerCase()+'-tab').tabs(role='presentation')
+                li(id=val.toLowerCase()+'-tab', class='tabs', role='presentation')
                     a(href='#'+val.toLowerCase(), aria-controls="profile", role='tab', data-toggle='tab')= val
                 
         // Tab panes
