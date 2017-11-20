@@ -10,14 +10,14 @@ $('.tab-pane:first-child').addClass('active');
 var language = 'Polish';
 
 if (window.location.href.indexOf("norwegian") > -1) {
-     $('.flag').attr('src', '/images/norway.png');
-     language = 'Norwegian';
+  $('.flag').attr('src', '/images/norway.png');
+  language = 'Norwegian';
 }
 
 
 
 
-$(function(){
+$(function () {
   var hash = window.location.hash;
   hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 
@@ -32,18 +32,21 @@ $(function(){
 // sets language for api
 var langAPI;
 
-if (document.querySelector('#switch').getAttribute("attr") == 'Polish') {
-  langAPI = 'pl';
+function langSwitch() {
+  if (document.querySelector('#switch').getAttribute("attr") == 'Polish') {
+    langAPI = 'pl';
+  }
+  else {
+    langAPI = 'no';
+  }
 }
-else {
-  langAPI = 'no';
-}
+langSwitch();
 
 // switches language
-document.querySelector('#switch').addEventListener('click', function() {
+document.querySelector('#switch').addEventListener('click', function () {
   if (langAPI !== 'en') {
     langAPI = 'en';
-    
+
     document.getElementById('sw1-p').innerHTML = language;
     document.getElementById('sw2-p').innerHTML = 'English';
     document.querySelector('#source').value = '';
@@ -54,6 +57,7 @@ document.querySelector('#switch').addEventListener('click', function() {
   }
   else {
     langAPI = document.querySelector('#switch').getAttribute("attr");
+    langSwitch();
     document.getElementById('sw1-p').innerHTML = 'English';
     document.getElementById('sw2-p').innerHTML = language;
     document.querySelector('#source').value = '';
@@ -64,25 +68,25 @@ document.querySelector('#switch').addEventListener('click', function() {
 });
 
 var url = "https://translate.yandex.net/api/v1.5/tr.json/translate",
-keyAPI = "trnsl.1.1.20171120T151319Z.884ad4768789b517.9e6db12a8ca198a2c0d93af1d8be54ee1669bf07";
+  keyAPI = "trnsl.1.1.20171120T151319Z.884ad4768789b517.9e6db12a8ca198a2c0d93af1d8be54ee1669bf07";
 
-document.querySelector('#source').addEventListener('keyup', function() {
-var xhr = new XMLHttpRequest(),
+document.querySelector('#source').addEventListener('keyup', function () {
+  var xhr = new XMLHttpRequest(),
     textAPI = document.querySelector('#source').value,
-    data = "key="+keyAPI+"&text="+textAPI+"&lang=" + langAPI;
-xhr.open("POST",url,true);
-xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-xhr.send(data);
-xhr.onreadystatechange = function() {
-    if (this.readyState==4 && this.status==200) {
-        var res = this.responseText;
-        var json = JSON.parse(res);
-        if(json.code == 200) {
-            document.querySelector('#output').value = json.text[0];
-        }
-        else {
-            document.querySelector('#output').innerHTML = "Error Code: " + json.code;
-        }
+    data = "key=" + keyAPI + "&text=" + textAPI + "&lang=" + langAPI;
+  xhr.open("POST", url, true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.send(data);
+  xhr.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var res = this.responseText;
+      var json = JSON.parse(res);
+      if (json.code == 200) {
+        document.querySelector('#output').value = json.text[0];
+      }
+      else {
+        document.querySelector('#output').innerHTML = "Error Code: " + json.code;
+      }
     }
-};
+  };
 }, false);
