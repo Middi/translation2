@@ -94,6 +94,10 @@
     line-height: 40px;
     background: $brand;
     color: white;
+    &:hover {
+        color: darken(white, 5);
+        cursor: pointer;
+    }
 }
 
 .nav-tabs {

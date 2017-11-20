@@ -50,9 +50,9 @@ document.querySelector('#switch').addEventListener('click', function () {
     document.getElementById('sw1-p').innerHTML = language;
     document.getElementById('sw2-p').innerHTML = 'English';
     document.querySelector('#source').value = '';
-    document.querySelector('#output').value = '';
-    document.querySelector('#source').placeholder = language;
-    document.querySelector('#output').placeholder = 'English';
+    document.querySelector('#output').innerHTML = '';
+    document.querySelector('#source').placeholder = 'Type ' + language + ' here';
+    document.querySelector('#output').placeholder = 'Type English here';
 
   }
   else {
@@ -61,9 +61,9 @@ document.querySelector('#switch').addEventListener('click', function () {
     document.getElementById('sw1-p').innerHTML = 'English';
     document.getElementById('sw2-p').innerHTML = language;
     document.querySelector('#source').value = '';
-    document.querySelector('#output').value = '';
-    document.querySelector('#source').placeholder = 'English';
-    document.querySelector('#output').placeholder = language;
+    document.querySelector('#output').innerHTML = '';
+    document.querySelector('#source').placeholder = 'Type English here';
+    document.querySelector('#output').placeholder = 'Type ' + language + ' here';
   }
 });
 
@@ -82,7 +82,7 @@ document.querySelector('#source').addEventListener('keyup', function () {
       var res = this.responseText;
       var json = JSON.parse(res);
       if (json.code == 200) {
-        document.querySelector('#output').value = json.text[0];
+        document.querySelector('#output').innerHTML = json.text[0];
       }
       else {
         document.querySelector('#output').innerHTML = "Error Code: " + json.code;

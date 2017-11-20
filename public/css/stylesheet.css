@@ -119,6 +119,9 @@ h1 {
   line-height: 40px;
   background: rgba(32, 166, 231, 0.8);
   color: white; }
+  .switch:hover {
+    color: #f2f2f2;
+    cursor: pointer; }
 
 .nav-tabs {
   overflow-x: auto;
