@@ -17,13 +17,16 @@ block content
         ul.nav.nav-tabs(role='tablist')
             if currentUser
                 li
-                    a(href='/new')
+                    a(href=lang.toLowerCase()+'/new')
                         i.fa.fa-plus.fa-lg(aria-hidden="true")
             each val in cat
                 li(id=val.toLowerCase()+'-tab', class='tabs', role='presentation')
                     a(href='#'+val.toLowerCase(), aria-controls="profile", role='tab', data-toggle='tab')= val
                 
         // Tab panes
+
+
+
         .tab-content
             each val in cat
                 div(id=val.toLowerCase(), class='tab-pane', role='tabpanel')
@@ -36,11 +39,11 @@ block content
                                     th.edit Edit
                         tbody
                             each datas, i in data
-                                if datas.category == val && datas[lang.toLowerCase()]
+                                if datas.category == val && datas.translated
                                     tr
                                         td= datas.english
-                                        td= datas[lang.toLowerCase()]
+                                        td= datas.translated
                                         if currentUser
                                             td.edit-cell
-                                                a(href="/edit/"+datas._id) 
+                                                a(href=lang.toLowerCase()+"/edit/"+datas._id) 
                                                     i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")

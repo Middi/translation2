@@ -1,0 +1,1109 @@
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce66"
+    },
+
+    "english": "Numbers",
+
+    "category": "Numbers",
+    "cat_id": 0,
+    "translated": "Tall"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce67"
+    },
+
+    "english": "One",
+
+    "category": "Numbers",
+    "cat_id": 1,
+    "translated": "En"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce68"
+    },
+
+    "english": "Two",
+
+    "category": "Numbers",
+    "cat_id": 2,
+    "translated": "To"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce69"
+    },
+
+    "translated": "Tre",
+    "english": "Three",
+
+    "category": "Numbers",
+    "cat_id": 3
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6a"
+    },
+
+    "english": "Four",
+
+    "category": "Numbers",
+    "cat_id": 4,
+    "translated": "Fire"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6b"
+    },
+
+    "english": "Five",
+
+    "category": "Numbers",
+    "cat_id": 5,
+    "translated": "Fem"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6c"
+    },
+
+    "english": "Six",
+
+    "category": "Numbers",
+    "cat_id": 6,
+    "translated": "Seks"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6d"
+    },
+
+    "english": "Seven",
+
+    "category": "Numbers",
+    "cat_id": 7,
+    "translated": "Sju"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6e"
+    },
+
+    "english": "Eight",
+
+    "category": "Numbers",
+    "cat_id": 8,
+    "translated": "Åtte"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6f"
+    },
+
+    "english": "Nine",
+
+    "category": "Numbers",
+    "cat_id": 9,
+    "translated": "Ni"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce70"
+    },
+
+    "english": "Ten",
+
+    "category": "Numbers",
+    "cat_id": 10,
+    "translated": "Ti"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce71"
+    },
+
+    "english": "Twenty",
+
+    "category": "Numbers",
+    "cat_id": 20,
+    "translated": "Tjue"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce72"
+    },
+
+    "english": "Thirty",
+
+    "category": "Numbers",
+    "cat_id": 30,
+    "translated": "Tretti"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce73"
+    },
+
+    "english": "Forty",
+
+    "category": "Numbers",
+    "cat_id": 40,
+    "translated": "Førti"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce74"
+    },
+
+    "english": "Fifty",
+
+    "category": "Numbers",
+    "cat_id": 50,
+    "translated": "Femti"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce75"
+    },
+
+    "english": "Sixty",
+
+    "category": "Numbers",
+    "cat_id": 60,
+    "translated": "Seksti"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce76"
+    },
+
+    "english": "Seventy",
+
+    "category": "Numbers",
+    "cat_id": 70,
+    "translated": "Sytti"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce77"
+    },
+
+    "english": "Eighty",
+
+    "category": "Numbers",
+    "cat_id": 80,
+    "translated": "Åtti"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce78"
+    },
+
+    "english": "Ninety",
+
+    "category": "Numbers",
+    "cat_id": 90,
+    "translated": "Nitti"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce79"
+    },
+
+    "english": "Hundred",
+
+    "category": "Numbers",
+    "cat_id": 100,
+    "translated": "Hundre"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce7a"
+    },
+
+    "english": "Thousand",
+
+    "category": "Numbers",
+    "cat_id": 1000,
+    "translated": "Tusen"
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce7b"
+    },
+
+    "english": "Million",
+
+    "category": "Numbers",
+    "cat_id": 1000000,
+    "translated": "Million"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce7d"
+    },
+
+    "english": "Colours",
+
+    "category": "Colors",
+    "cat_id": 1,
+    "translated": "Farger"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce7e"
+    },
+
+    "english": "White",
+
+    "category": "Colors",
+    "cat_id": 2,
+    "translated": "Hvit"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce7f"
+    },
+
+    "english": "Black",
+
+    "category": "Colors",
+    "cat_id": 3,
+    "translated": "Svart"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce80"
+    },
+
+    "english": "Red",
+
+    "category": "Colors",
+    "cat_id": 4,
+    "translated": "Rød"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce81"
+    },
+
+    "english": "Yellow",
+
+    "category": "Colors",
+    "cat_id": 5,
+    "translated": "Gul"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce82"
+    },
+
+    "english": "Green",
+
+    "category": "Colors",
+    "cat_id": 6,
+    "translated": "Grønn"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce83"
+    },
+
+    "english": "Blue",
+
+    "category": "Colors",
+    "cat_id": 7,
+    "translated": "Blå"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce84"
+    },
+
+    "english": "Orange",
+
+    "category": "Colors",
+    "cat_id": 8,
+    "translated": "Oransje"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce85"
+    },
+
+    "english": "Grey",
+
+    "category": "Colors",
+    "cat_id": 9,
+    "translated": "Grå"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce87"
+    },
+
+    "english": "Days",
+
+    "category": "Days",
+    "cat_id": 1,
+    "translated": "Dager"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce88"
+    },
+
+    "english": "Monday",
+
+    "category": "Days",
+    "cat_id": 2,
+    "translated": "Mandag"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce89"
+    },
+
+    "english": "Tuesday",
+
+    "category": "Days",
+    "cat_id": 3,
+    "translated": "Tirsdag"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8a"
+    },
+
+    "english": "Wednesday",
+
+    "category": "Days",
+    "cat_id": 4,
+    "translated": "Onsdag"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8b"
+    },
+
+    "english": "Thursday",
+
+    "category": "Days",
+    "cat_id": 5,
+    "translated": "Torsdag"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8c"
+    },
+
+    "english": "Friday",
+
+    "category": "Days",
+    "cat_id": 6,
+    "translated": "Fredag"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8d"
+    },
+
+    "english": "Saturday",
+
+    "category": "Days",
+    "cat_id": 7,
+    "translated": "Lørdag"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8e"
+    },
+
+    "english": "Sunday",
+
+    "category": "Days",
+    "cat_id": 8,
+    "translated": "Søndag"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce90"
+    },
+
+    "english": "Months",
+
+    "category": "Months",
+    "cat_id": 1,
+    "translated": "Måneder"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce91"
+    },
+
+    "english": "January",
+
+    "category": "Months",
+    "cat_id": 2,
+    "translated": "Januar"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce92"
+    },
+
+    "english": "February",
+
+    "category": "Months",
+    "cat_id": 3,
+    "translated": "Februar"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce93"
+    },
+
+    "english": "March",
+
+    "category": "Months",
+    "cat_id": 4,
+    "translated": "Mars"
+}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce94"
+    },
+
+    "english": "April",
+
+    "category": "Months",
+    "cat_id": 5,
+    "translated": "April"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce95"
+    },
+
+    "english": "May",
+
+    "category": "Months",
+    "cat_id": 6,
+    "translated": "Mai"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce96"
+    },
+
+    "english": "June",
+
+    "category": "Months",
+    "cat_id": 7,
+    "translated": "Juni"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce97"
+    },
+
+    "english": "July",
+
+    "category": "Months",
+    "cat_id": 8,
+    "translated": "Juli"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce98"
+    },
+
+    "english": "August",
+
+    "category": "Months",
+    "cat_id": 9,
+    "translated": "August"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce99"
+    },
+
+    "english": "September",
+
+    "category": "Months",
+    "cat_id": 10,
+    "translated": "September"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9a"
+    },
+
+    "english": "October",
+
+    "category": "Months",
+    "cat_id": 11,
+    "translated": "Oktober"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9b"
+    },
+
+    "english": "November",
+
+    "category": "Months",
+    "cat_id": 12,
+    "translated": "November"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9c"
+    },
+
+    "english": "December",
+
+    "category": "Months",
+    "cat_id": 13,
+    "translated": "Desember"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9e"
+    },
+
+    "english": "Me",
+
+    "category": "Misc",
+    "cat_id": 1,
+    "translated": "Meg"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9f"
+    },
+
+    "english": "You",
+
+    "category": "Misc",
+    "cat_id": 2,
+    "translated": "Du/Deg"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea0"
+    },
+
+    "english": "You (Plural)",
+
+    "category": "Misc",
+    "cat_id": 3,
+    "translated": "Dere"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea1"
+    },
+
+    "english": "They",
+
+    "category": "Misc",
+    "cat_id": 4,
+    "translated": "De"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea2"
+    },
+
+    "english": "They (Girls)",
+
+    "category": "Misc",
+    "cat_id": 5.0
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea3"
+    },
+
+    "english": "Those",
+
+    "category": "Misc",
+    "cat_id": 6,
+    "translated": "De"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea4"
+    },
+
+    "english": "Those (Girls)",
+
+    "category": "Misc",
+    "cat_id": 7.0
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea6"
+    },
+
+    "english": "Times",
+
+    "category": "Times",
+    "cat_id": 1,
+    "translated": "Ganger"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea7"
+    },
+
+    "english": "Second",
+
+    "category": "Times",
+    "cat_id": 2,
+    "translated": "Sekund"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea8"
+    },
+
+    "english": "Minute",
+
+    "category": "Times",
+    "cat_id": 3,
+    "translated": "Minutt"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea9"
+    },
+
+    "english": "Hour",
+
+    "category": "Times",
+    "cat_id": 4,
+    "translated": "Time"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceaa"
+    },
+
+    "english": "Day",
+
+    "category": "Times",
+    "cat_id": 5,
+    "translated": "Dag"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceab"
+    },
+
+    "english": "Week",
+
+    "category": "Times",
+    "cat_id": 6,
+    "translated": "Uke"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceac"
+    },
+
+    "english": "Month",
+
+    "category": "Times",
+    "cat_id": 7,
+    "translated": "Måned"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcead"
+    },
+
+    "english": "Year",
+
+    "category": "Times",
+    "cat_id": 8,
+    "translated": "År"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceae"
+    },
+
+    "english": "Decade",
+
+    "category": "Times",
+    "cat_id": 9,
+    "translated": "Tiår"
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceaf"
+    },
+
+    "english": "Century",
+
+    "category": "Times",
+    "cat_id": 10,
+    "translated": "Århundre"
+}
+{
+    "_id": {
+        "$oid": "593c74ae734d1d02258f14f0"
+    },
+
+    "english": "Hello",
+
+    "category": "Pleasantries",
+    "cat_id": 1,
+    "translated": "Hei"
+}
+{
+    "_id": {
+        "$oid": "593c74ec734d1d02258f14f9"
+    },
+
+    "english": "Goodnight",
+
+    "category": "Pleasantries",
+    "cat_id": 2,
+    "translated": "Har det bra"
+}
+{
+    "_id": {
+        "$oid": "593c74ff734d1d02258f14fc"
+    },
+
+    "english": "Good day",
+
+    "category": "Pleasantries",
+    "cat_id": 3,
+    "translated": "God dag"
+}
+{
+    "_id": {
+        "$oid": "593c7616734d1d02258f1528"
+    },
+
+    "english": "How are you?",
+
+    "category": "Pleasantries",
+    "cat_id": 4,
+    "translated": "Hvordan går det"
+}
+{
+    "_id": {
+        "$oid": "593c76fc734d1d02258f1550"
+    },
+
+    "english": "Thank you",
+
+    "category": "Pleasantries",
+    "cat_id": 5,
+    "translated": "Tusen takk"
+}
+{
+    "_id": {
+        "$oid": "593c77cc734d1d02258f156a"
+    },
+
+    "english": "Excuse me",
+
+    "category": "Pleasantries",
+    "cat_id": 6,
+    "translated": "Unnskyld"
+}
+{
+    "_id": {
+        "$oid": "595935e3f36d287671cd9848"
+    },
+
+    "english": "Left",
+
+    "category": "Directions",
+    "cat_id": 1,
+    "translated": "Venstre"
+}
+{
+    "_id": {
+        "$oid": "59593761f36d287671cd98ad"
+    },
+
+    "english": "Right",
+
+    "category": "Directions",
+    "cat_id": 2,
+    "translated": "Høyre"
+}
+{
+    "_id": {
+        "$oid": "595be1d5f8a9f515e4134a13"
+    },
+
+    "english": "Straight",
+
+    "category": "Directions",
+    "cat_id": 3,
+    "__v": 0,
+    "translated": "Rett"
+}
+{
+    "_id": {
+        "$oid": "595be25ef8a9f515e4134a14"
+    },
+
+    "english": "Here",
+
+    "category": "Directions",
+    "cat_id": 4,
+    "__v": 0,
+    "translated": "Her"
+}
+{
+    "_id": {
+        "$oid": "595be298f8a9f515e4134a16"
+    },
+
+    "english": "There",
+
+    "category": "Directions",
+    "cat_id": 5,
+    "__v": 0,
+    "translated": "Der"
+}
+{
+    "_id": {
+        "$oid": "595d2fe77b76e80004d7b80c"
+    },
+
+    "english": "People",
+
+    "category": "People",
+    "cat_id": 0,
+    "__v": 0,
+    "translated": "Mennesker"
+}
+{
+    "_id": {
+        "$oid": "595d311d7b76e80004d7b80d"
+    },
+
+    "english": "Friend",
+
+    "category": "People",
+    "cat_id": 1,
+    "__v": 0,
+    "translated": "Venn"
+}
+{
+    "_id": {
+        "$oid": "595d321f7b76e80004d7b80e"
+    },
+
+    "english": "Girl",
+
+    "category": "People",
+    "cat_id": 2,
+    "__v": 0,
+    "translated": "Jente"
+}
+{
+    "_id": {
+        "$oid": "595d324f7b76e80004d7b80f"
+    },
+
+    "english": "Boy",
+
+    "category": "People",
+    "cat_id": 3,
+    "__v": 0,
+    "translated": "Gutt"
+}
+{
+    "_id": {
+        "$oid": "595d32777b76e80004d7b810"
+    },
+
+    "english": "Woman",
+
+    "category": "People",
+    "cat_id": 4,
+    "__v": 0,
+    "translated": "Kvinne"
+}
+{
+    "_id": {
+        "$oid": "595d32c37b76e80004d7b811"
+    },
+
+    "english": "Man",
+
+    "category": "People",
+    "cat_id": 5,
+    "__v": 0,
+    "translated": "Mann"
+}
+{
+    "_id": {
+        "$oid": "595d33027b76e80004d7b812"
+    },
+
+    "english": "Wife",
+
+    "category": "People",
+    "cat_id": 6,
+    "__v": 0,
+    "translated": "Kone"
+}
+{
+    "_id": {
+        "$oid": "595d33507b76e80004d7b813"
+    },
+
+    "english": "Husband",
+
+    "category": "People",
+    "cat_id": 7,
+    "__v": 0,
+    "translated": "Mann"
+}
+{
+    "_id": {
+        "$oid": "5a10758068eb9e6ea1034224"
+    },
+
+    "translated": "Elleve",
+    "english": "Eleven",
+
+    "category": "Numbers",
+    "cat_id": 11,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a1078795cae7e701cef3c2b"
+    },
+
+    "translated": "Tolv",
+    "english": "Twelve",
+
+    "category": "Numbers",
+    "cat_id": 12,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a1078865cae7e701cef3c2c"
+    },
+
+    "translated": "Tretten",
+    "english": "Thirteen",
+
+    "category": "Numbers",
+    "cat_id": 13,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a1078b55cae7e701cef3c2d"
+    },
+
+    "translated": "Fjorten",
+    "english": "Fourteen",
+
+    "category": "Numbers",
+    "cat_id": 14,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a10791b5cae7e701cef3c2e"
+    },
+
+    "translated": "Femten",
+    "english": "Fifteen",
+
+    "category": "Numbers",
+    "cat_id": 15,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a10792e5cae7e701cef3c2f"
+    },
+
+    "translated": "Seksten",
+    "english": "Sixteen",
+
+    "category": "Numbers",
+    "cat_id": 16,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a1079395cae7e701cef3c30"
+    },
+
+    "translated": "Sytten",
+    "english": "Seventeen",
+
+    "category": "Numbers",
+    "cat_id": 17,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a1079445cae7e701cef3c31"
+    },
+
+    "translated": "Atten",
+    "english": "Eighteen",
+
+    "category": "Numbers",
+    "cat_id": 18,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a1079545cae7e701cef3c32"
+    },
+
+    "translated": "Nitten",
+    "english": "Nineteen",
+
+    "category": "Numbers",
+    "cat_id": 19,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a107b425cae7e701cef3c33"
+    },
+
+    "translated": "Null",
+    "english": "Zero",
+
+    "category": "Numbers",
+    "cat_id": 0,
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5a10818fa4502973b769865d"
+    },
+
+    "translated": "Helg",
+    "english": "Weekend",
+
+    "category": "Days",
+    "cat_id": 9,
+    "__v": 0
+}

@@ -56,50 +56,44 @@ app.use(function(req, res, next){
 
 
 // MONGOOSE/MODEL CONFIG
-var transSchema = new mongoose.Schema({
-    polish: String,
+// var transSchema = new mongoose.Schema({
+//     polish: String,
+//     english: String,
+//     phonetic: String,
+//     category: String,
+//     cat_id: Number,
+//     norwegian: String
+// }, {collection: 'polish'});
+
+// var Trans = mongoose.model("polish", transSchema);
+
+// MONGOOSE/MODEL CONFIG
+var norwegianSchema = new mongoose.Schema({
     english: String,
+    translated: String,
     phonetic: String,
     category: String,
     cat_id: Number,
-    norwegian: String
+    lang: String
+}, {collection: 'norwegian'});
+
+var Norwegian = mongoose.model("norwegian", norwegianSchema);
+
+// MONGOOSE/MODEL CONFIG
+var polishSchema = new mongoose.Schema({
+    english: String,
+    translated: String,
+    phonetic: String,
+    category: String,
+    cat_id: Number,
+    lang: String
 }, {collection: 'polish'});
 
-var Trans = mongoose.model("polish", transSchema);
+var Polish = mongoose.model("polish", polishSchema);
 
-
-app.get('/', function(req, res){
-    Trans.find(function(err, data) {
-        res.render('index', {
-            data: data,
-            lang: 'Polish'
-        });
-    }).sort({ cat_id: 1});
-});
-
-
-app.get('/new', isLoggedIn, function(req, res){
-    Trans.find( { category: "Directions" }, function(err, data) {
-        res.render('new', {data: data});
-    });
-});
-
-
-// CREATE ROUTE
-app.post("/entry", function(req, res){
-    // Create Entry
-    Trans.create(req.body.trans, function(err, newEntry){
-        if(err){
-            res.render("/");
-        }
-        else {
-            res.redirect("/new");
-        }
-    })
-});
 
 app.get('/norwegian', function(req, res){
-    Trans.find(function(err, data) {
+    Norwegian.find(function(err, data) {
         res.render('index', {
             data: data,
             lang: 'Norwegian'
@@ -107,18 +101,86 @@ app.get('/norwegian', function(req, res){
     }).sort({ cat_id: 1});
 });
 
+
+app.get('/polish', function(req, res){
+    Polish.find(function(err, data) {
+        res.render('index', {
+            data: data,
+            lang: 'Polish'
+    });
+    }).sort({ cat_id: 1});
+});
+
+
+app.get('/norwegian/new', isLoggedIn, function(req, res){
+    Norwegian.find( function(err, data) {
+        res.render('new', {
+            data: data,
+            lang: 'Norwegian'
+        });
+    });
+});
+
+app.get('/polish/new', isLoggedIn, function(req, res){
+    Polish.find( function(err, data) {
+        res.render('new', {
+            data: data,
+            lang: 'Polish'
+        });
+    });
+});
+
+
+// CREATE ROUTES
+app.post("/norwegian/entry", function(req, res){
+    // Create Entry
+    Norwegian.create(req.body.trans, function(err, newEntry){
+        if(err){
+            res.render("/norwegian");
+        }
+        else {
+            res.redirect("/norwegian/new");
+        }
+    })
+});
+
+// CREATE ROUTES
+app.post("/polish/entry", function(req, res){
+    // Create Entry
+    Polish.create(req.body.trans, function(err, newEntry){
+        if(err){
+            res.render("/polish");
+        }
+        else {
+            res.redirect("/polish/new");
+        }
+    })
+});
+
+
 // Load Edit Form
-app.get('/edit/:id', function (req, res) {
-    Trans.findById(req.params.id, function (err, article) {
+app.get('/norwegian/edit/:id', function (req, res) {
+    Norwegian.findById(req.params.id, function (err, article) {
         res.render('edit', {
-            article: article
+            article: article,
+            lang: 'Norwegian'
+        });
+    });
+});
+
+// Load Edit Form
+app.get('/polish/edit/:id', function (req, res) {
+    Polish.findById(req.params.id, function (err, article) {
+        res.render('edit', {
+            article: article,
+            lang: 'Polish'
         });
     });
 });
 
 
 // Update Submit POST Route
-app.post('/edit/:id', function (req, res) {
+app.post('/norwegian/edit/:id', function (req, res) {
     let article = {};
     article.polish = req.body.polish;
     article.norwegian = req.body.norwegian;
@@ -129,13 +191,36 @@ app.post('/edit/:id', function (req, res) {
 
     let query = { _id: req.params.id };
 
-    Trans.update(query, article, function (err) {
+    Norwegian.update(query, article, function (err) {
         if (err) {
             console.log(err);
             return;
         }
         else {
-            res.redirect('/');
+            res.redirect('/norwegian');
+        }
+    });
+});
+
+
+// Update Submit POST Route
+app.post('/polish/edit/:id', function (req, res) {
+    let article = {};
+    article.translated = req.body.translated
+    article.english = req.body.english;
+    article.phonetic = req.body.phonetic;
+    article.category = req.body.category;
+    article.cat_id = req.body.cat_id;
+
+    let query = { _id: req.params.id };
+
+    Polish.update(query, article, function (err) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        else {
+            res.redirect('/polish');
         }
     });
 });
@@ -149,7 +234,7 @@ app.get("/login", function(req, res){
 
 // Login Logic
 app.post("/login", passport.authenticate("local", {
-    successRedirect: "/new",
+    successRedirect: "/norwegian",
     failureRedirect: "/login"
 }), function(req, res){
    

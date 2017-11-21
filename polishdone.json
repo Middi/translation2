@@ -1,0 +1,721 @@
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce66"
+    },
+    "translated": "Liczby",
+    "english": "Numbers",
+    "category": "Numbers",
+    "cat_id": 0
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce67"
+    },
+    "translated": "Jeden",
+    "english": "One",
+    "category": "Numbers",
+    "cat_id": 1
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce68"
+    },
+    "translated": "Dwa",
+    "english": "Two",
+    "category": "Numbers",
+    "cat_id": 2}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce69"
+    },
+    "translated": "Trzy",
+    "english": "Three",
+    "category": "Numbers",
+    "cat_id": 3
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6a"
+    },
+    "translated": "Cztery",
+    "english": "Four",
+    "category": "Numbers",
+    "cat_id": 4
+}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6b"
+    },
+    "translated": "Pięć",
+    "english": "Five",
+    "category": "Numbers",
+    "cat_id": 5}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6c"
+    },
+    "translated": "Sześć",
+    "english": "Six",
+    "category": "Numbers",
+    "cat_id": 6}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6d"
+    },
+    "translated": "Siedem",
+    "english": "Seven",
+    "category": "Numbers",
+    "cat_id": 7}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6e"
+    },
+    "translated": "Osiem",
+    "english": "Eight",
+    "category": "Numbers",
+    "cat_id": 8}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce6f"
+    },
+    "translated": "Dziewięć",
+    "english": "Nine",
+    "category": "Numbers",
+    "cat_id": 9}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce70"
+    },
+    "translated": "Dziesięć",
+    "english": "Ten",
+    "category": "Numbers",
+    "cat_id": 10}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce71"
+    },
+    "translated": "Dwadzieścia",
+    "english": "Twenty",
+    "category": "Numbers",
+    "cat_id": 20}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce72"
+    },
+    "translated": "Trzydzieści",
+    "english": "Thirty",
+    "category": "Numbers",
+    "cat_id": 30}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce73"
+    },
+    "translated": "Czterdzieści",
+    "english": "Forty",
+    "category": "Numbers",
+    "cat_id": 40}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce74"
+    },
+    "translated": "Pięćdziesiąt",
+    "english": "Fifty",
+    "category": "Numbers",
+    "cat_id": 50}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce75"
+    },
+    "translated": "Sześćdziesiąt",
+    "english": "Sixty",
+    "category": "Numbers",
+    "cat_id": 60}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce76"
+    },
+    "translated": "Siedemdziesiąt",
+    "english": "Seventy",
+    "category": "Numbers",
+    "cat_id": 70}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce77"
+    },
+    "translated": "Osiemdziesiąt",
+    "english": "Eighty",
+    "category": "Numbers",
+    "cat_id": 80}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce78"
+    },
+    "translated": "Dziewięćdziesiąt",
+    "english": "Ninety",
+    "category": "Numbers",
+    "cat_id": 90}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce79"
+    },
+    "translated": "Sto",
+    "english": "Hundred",
+    "category": "Numbers",
+    "cat_id": 100}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce7a"
+    },
+    "translated": "Tysiąc",
+    "english": "Thousand",
+    "category": "Numbers",
+    "cat_id": 1000}
+{
+    "_id": {
+        "$oid": "593c3b5045e164abe81fce7b"
+    },
+    "translated": "Milion",
+    "english": "Million",
+    "category": "Numbers",
+    "cat_id": 1000000}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce7d"
+    },
+    "translated": "Kolory",
+    "english": "Colours",
+    "category": "Colors",
+    "cat_id": 1}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce7e"
+    },
+    "translated": "Biały",
+    "english": "White",
+    "category": "Colors",
+    "cat_id": 2}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce7f"
+    },
+    "translated": "Czarny",
+    "english": "Black",
+    "category": "Colors",
+    "cat_id": 3}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce80"
+    },
+    "translated": "Czerwony",
+    "english": "Red",
+    "category": "Colors",
+    "cat_id": 4}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce81"
+    },
+    "translated": "Żółty",
+    "english": "Yellow",
+    "category": "Colors",
+    "cat_id": 5}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce82"
+    },
+    "translated": "Zielony",
+    "english": "Green",
+    "category": "Colors",
+    "cat_id": 6}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce83"
+    },
+    "translated": "Niebieski",
+    "english": "Blue",
+    "category": "Colors",
+    "cat_id": 7}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce84"
+    },
+    "translated": "Pomarańczowy",
+    "english": "Orange",
+    "category": "Colors",
+    "cat_id": 8}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce85"
+    },
+    "translated": "Szary",
+    "english": "Grey",
+    "category": "Colors",
+    "cat_id": 9}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce87"
+    },
+    "translated": "Dni",
+    "english": "Days",
+    "category": "Days",
+    "cat_id": 1}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce88"
+    },
+    "translated": "Poniedziałek",
+    "english": "Monday",
+    "category": "Days",
+    "cat_id": 2}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce89"
+    },
+    "translated": "Wtorek",
+    "english": "Tuesday",
+    "category": "Days",
+    "cat_id": 3}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8a"
+    },
+    "translated": "Środa",
+    "english": "Wednesday",
+    "category": "Days",
+    "cat_id": 4}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8b"
+    },
+    "translated": "Czwartek",
+    "english": "Thursday",
+    "category": "Days",
+    "cat_id": 5}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8c"
+    },
+    "translated": "Piątek",
+    "english": "Friday",
+    "category": "Days",
+    "cat_id": 6}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8d"
+    },
+    "translated": "Sobota",
+    "english": "Saturday",
+    "category": "Days",
+    "cat_id": 7}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce8e"
+    },
+    "translated": "Niedziela",
+    "english": "Sunday",
+    "category": "Days",
+    "cat_id": 8}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce90"
+    },
+    "translated": "Miesiące",
+    "english": "Months",
+    "category": "Months",
+    "cat_id": 1}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce91"
+    },
+    "translated": "Styczeń",
+    "english": "January",
+    "category": "Months",
+    "cat_id": 2}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce92"
+    },
+    "translated": "Luty",
+    "english": "February",
+    "category": "Months",
+    "cat_id": 3}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce93"
+    },
+    "translated": "Marzec",
+    "english": "March",
+    "category": "Months",
+    "cat_id": 4}
+{
+    "_id": {
+        "$oid": "593c3b6345e164abe81fce94"
+    },
+    "translated": "Kwiecień",
+    "english": "April",
+    "category": "Months",
+    "cat_id": 5}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce95"
+    },
+    "translated": "Maj",
+    "english": "May",
+    "category": "Months",
+    "cat_id": 6}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce96"
+    },
+    "translated": "Czerwiec",
+    "english": "June",
+    "category": "Months",
+    "cat_id": 7}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce97"
+    },
+    "translated": "Lipiec",
+    "english": "July",
+    "category": "Months",
+    "cat_id": 8}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce98"
+    },
+    "translated": "Sierpień",
+    "english": "August",
+    "category": "Months",
+    "cat_id": 9}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce99"
+    },
+    "translated": "Wrzesień",
+    "english": "September",
+    "category": "Months",
+    "cat_id": 10}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9a"
+    },
+    "translated": "Październik",
+    "english": "October",
+    "category": "Months",
+    "cat_id": 11}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9b"
+    },
+    "translated": "Listopad",
+    "english": "November",
+    "category": "Months",
+    "cat_id": 12}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9c"
+    },
+    "translated": "Grudzień",
+    "english": "December",
+    "category": "Months",
+    "cat_id": 13}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9e"
+    },
+    "translated": "Ja",
+    "english": "Me",
+    "category": "Misc",
+    "cat_id": 1}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fce9f"
+    },
+    "translated": "Ty",
+    "english": "You",
+    "category": "Misc",
+    "cat_id": 2}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea0"
+    },
+    "translated": "Wy",
+    "english": "You (Plural)",
+    "category": "Misc",
+    "cat_id": 3}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea1"
+    },
+    "translated": "Oni",
+    "english": "They",
+    "category": "Misc",
+    "cat_id": 4}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea2"
+    },
+    "translated": "One",
+    "english": "They (Girls)",
+    "category": "Misc",
+    "cat_id": 5.0
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea3"
+    },
+    "translated": "Tamci",
+    "english": "Those",
+    "category": "Misc",
+    "cat_id": 6}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea4"
+    },
+    "translated": "Tamte",
+    "english": "Those (Girls)",
+    "category": "Misc",
+    "cat_id": 7.0
+}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea6"
+    },
+    "translated": "Czasy",
+    "english": "Times",
+    "category": "Times",
+    "cat_id": 1}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea7"
+    },
+    "translated": "Sekunda",
+    "english": "Second",
+    "category": "Times",
+    "cat_id": 2}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea8"
+    },
+    "translated": "Minuta",
+    "english": "Minute",
+    "category": "Times",
+    "cat_id": 3}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcea9"
+    },
+    "translated": "Godzina",
+    "english": "Hour",
+    "category": "Times",
+    "cat_id": 4}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceaa"
+    },
+    "translated": "Dzień",
+    "english": "Day",
+    "category": "Times",
+    "cat_id": 5}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceab"
+    },
+    "translated": "Tydzień",
+    "english": "Week",
+    "category": "Times",
+    "cat_id": 6}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceac"
+    },
+    "translated": "Miesiąc",
+    "english": "Month",
+    "category": "Times",
+    "cat_id": 7}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fcead"
+    },
+    "translated": "Rok",
+    "english": "Year",
+    "category": "Times",
+    "cat_id": 8}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceae"
+    },
+    "translated": "Dekada",
+    "english": "Decade",
+    "category": "Times",
+    "cat_id": 9}
+{
+    "_id": {
+        "$oid": "593c3b6e45e164abe81fceaf"
+    },
+    "translated": "Wiek",
+    "english": "Century",
+    "category": "Times",
+    "cat_id": 10}
+{
+    "_id": {
+        "$oid": "593c74ae734d1d02258f14f0"
+    },
+    "translated": "Cześć",
+    "english": "Hello",
+    "category": "Pleasantries",
+    "cat_id": 1}
+{
+    "_id": {
+        "$oid": "593c74ec734d1d02258f14f9"
+    },
+    "translated": "Dobranoc",
+    "english": "Goodnight",
+    "category": "Pleasantries",
+    "cat_id": 2}
+{
+    "_id": {
+        "$oid": "593c74ff734d1d02258f14fc"
+    },
+    "translated": "Dzień dobry",
+    "english": "Good day",
+    "category": "Pleasantries",
+    "cat_id": 3}
+{
+    "_id": {
+        "$oid": "593c7616734d1d02258f1528"
+    },
+    "translated": "Jak się masz?",
+    "english": "How are you?",
+    "category": "Pleasantries",
+    "cat_id": 4}
+{
+    "_id": {
+        "$oid": "593c76fc734d1d02258f1550"
+    },
+    "translated": "Dziękuję",
+    "english": "Thank you",
+    "category": "Pleasantries",
+    "cat_id": 5}
+{
+    "_id": {
+        "$oid": "593c77cc734d1d02258f156a"
+    },
+    "translated": "Przepraszam",
+    "english": "Excuse me",
+    "category": "Pleasantries",
+    "cat_id": 6}
+{
+    "_id": {
+        "$oid": "595935e3f36d287671cd9848"
+    },
+    "translated": "Lewo",
+    "english": "Left",
+    "category": "Directions",
+    "cat_id": 1}
+{
+    "_id": {
+        "$oid": "59593761f36d287671cd98ad"
+    },
+    "translated": "Prawo",
+    "english": "Right",
+    "category": "Directions",
+    "cat_id": 2}
+{
+    "_id": {
+        "$oid": "595be1d5f8a9f515e4134a13"
+    },
+    "translated": "Prosto",
+    "english": "Straight",
+    "category": "Directions",
+    "cat_id": 3,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595be25ef8a9f515e4134a14"
+    },
+    "translated": "Tutaj",
+    "english": "Here",
+    "category": "Directions",
+    "cat_id": 4,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595be298f8a9f515e4134a16"
+    },
+    "translated": "Tam",
+    "english": "There",
+    "category": "Directions",
+    "cat_id": 5,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595d2fe77b76e80004d7b80c"
+    },
+    "translated": "Ludzie",
+    "english": "People",
+    "category": "People",
+    "cat_id": 0,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595d311d7b76e80004d7b80d"
+    },
+    "translated": "Przyjaciel",
+    "english": "Friend",
+    "category": "People",
+    "cat_id": 1,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595d321f7b76e80004d7b80e"
+    },
+    "translated": "Dziewczyna",
+    "english": "Girl",
+    "category": "People",
+    "cat_id": 2,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595d324f7b76e80004d7b80f"
+    },
+    "translated": "Chłopak",
+    "english": "Boy",
+    "category": "People",
+    "cat_id": 3,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595d32777b76e80004d7b810"
+    },
+    "translated": "Kobieta",
+    "english": "Woman",
+    "category": "People",
+    "cat_id": 4,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595d32c37b76e80004d7b811"
+    },
+    "translated": "Mężczyzna",
+    "english": "Man",
+    "category": "People",
+    "cat_id": 5,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595d33027b76e80004d7b812"
+    },
+    "translated": "Żona",
+    "english": "Wife",
+    "category": "People",
+    "cat_id": 6,
+    "__v": 0}
+{
+    "_id": {
+        "$oid": "595d33507b76e80004d7b813"
+    },
+    "translated": "Mąż",
+    "english": "Husband",
+    "category": "People",
+    "cat_id": 7,
+    "__v": 0}
