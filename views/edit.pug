@@ -20,7 +20,7 @@ block content
                         .row
                             .form-group
                                 label Category
-                                select.form-control(id="selection" type='text', name='category' value=article.category)
+                                select.form-control(id="selection" type='text', name='category')
                                     each val in cat
                                         if article.category == val
                                             option(selected='selected')= val

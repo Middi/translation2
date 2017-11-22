@@ -1,6 +1,7 @@
 extends layout
 
 block content
+    - var cat = ['Numbers', 'Times', 'Days', 'Months', 'Colors', 'Pleasantries', 'Directions', 'People', 'Misc']
     .container
         h1.text-center New Entry
         .form#newform
@@ -19,16 +20,8 @@ block content
                             .form-group
                                 label Category
                                 select.form-control(type='text', name='trans[category]')
-                                    option Numbers
-                                    option Times
-                                    option Days
-                                    option Months
-                                    option Colors
-                                    option Pleasantries
-                                    option Directions
-                                    option People
-                                    option Misc
-                        .row
+                                    each val in cat
+                                        option= val
                             .form-group
                                 label Position
                                 input.form-control(type='text', name='trans[cat_id]', placeholder='Position')
