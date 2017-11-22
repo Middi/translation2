@@ -217,9 +217,9 @@ table {
     border: 2px solid $brand;
     font-weight: 600;
     &:hover {
-            color: $brand;
-            background-color: darken($white, 1);
-        }
+        color: $brand;
+        background-color: darken($white, 1);
+    }
 }
 
 

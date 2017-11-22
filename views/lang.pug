@@ -24,9 +24,6 @@ block content
                     a(href='#'+val.toLowerCase(), aria-controls="profile", role='tab', data-toggle='tab')= val
                 
         // Tab panes
-
-
-
         .tab-content
             each val in cat
                 div(id=val.toLowerCase(), class='tab-pane', role='tabpanel')

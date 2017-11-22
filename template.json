@@ -1,528 +1,599 @@
+/*  
+    Language : Polish
+    Translator : Richard Middleton
+*/
+
 {
     "translated": "Liczby",
     "english": "Numbers",
     "category": "Numbers",
+    "cat_id": -1
+},
+{
+    "translated": "Null",
+    "english": "Zero",
+    "category": "Numbers",
     "cat_id": 0
-}
+},
 {
     "translated": "Jeden",
     "english": "One",
     "category": "Numbers",
     "cat_id": 1
-}
+},
 {
     "translated": "Dwa",
     "english": "Two",
     "category": "Numbers",
     "cat_id": 2
-}
+},
 {
     "translated": "Trzy",
     "english": "Three",
     "category": "Numbers",
     "cat_id": 3
-}
+},
 {
     "translated": "Cztery",
     "english": "Four",
     "category": "Numbers",
     "cat_id": 4
-}
+},
 {
     "translated": "Pięć",
     "english": "Five",
     "category": "Numbers",
     "cat_id": 5
-}
+},
 {
     "translated": "Sześć",
     "english": "Six",
     "category": "Numbers",
     "cat_id": 6
-}
+},
 {
     "translated": "Siedem",
     "english": "Seven",
     "category": "Numbers",
     "cat_id": 7
-}
+},
 {
     "translated": "Osiem",
     "english": "Eight",
     "category": "Numbers",
     "cat_id": 8
-}
+},
 {
     "translated": "Dziewięć",
     "english": "Nine",
     "category": "Numbers",
     "cat_id": 9
-}
+},
 {
     "translated": "Dziesięć",
     "english": "Ten",
     "category": "Numbers",
     "cat_id": 10
+},
+{
+    "translated": "Elleve",
+    "english": "Eleven",
+    "category": "Numbers",
+    "cat_id": 11
 }
+    {
+    "translated": "Tolv",
+    "english": "Twelve",
+    "category": "Numbers",
+    "cat_id": 12
+}
+    {
+    "translated": "Tretten",
+    "english": "Thirteen",
+    "category": "Numbers",
+    "cat_id": 13
+}
+    {
+    "translated": "Fjorten",
+    "english": "Fourteen",
+    "category": "Numbers",
+    "cat_id": 14
+}
+    {
+    "translated": "Femten",
+    "english": "Fifteen",
+    "category": "Numbers",
+    "cat_id": 15
+}
+    {
+    "translated": "Seksten",
+    "english": "Sixteen",
+    "category": "Numbers",
+    "cat_id": 16
+}
+    {
+    "translated": "Sytten",
+    "english": "Seventeen",
+    "category": "Numbers",
+    "cat_id": 17
+}
+    {
+    "translated": "Atten",
+    "english": "Eighteen",
+    "category": "Numbers",
+    "cat_id": 18
+}
+    {
+    "translated": "Nitten",
+    "english": "Nineteen",
+    "category": "Numbers",
+    "cat_id": 19
+},
 {
     "translated": "Dwadzieścia",
     "english": "Twenty",
     "category": "Numbers",
     "cat_id": 20
-}
+},
 {
     "translated": "Trzydzieści",
     "english": "Thirty",
     "category": "Numbers",
     "cat_id": 30
-}
+},
 {
     "translated": "Czterdzieści",
     "english": "Forty",
     "category": "Numbers",
     "cat_id": 40
-}
+},
 {
     "translated": "Pięćdziesiąt",
     "english": "Fifty",
     "category": "Numbers",
     "cat_id": 50
-}
+},
 {
     "translated": "Sześćdziesiąt",
     "english": "Sixty",
     "category": "Numbers",
     "cat_id": 60
-}
+},
 {
     "translated": "Siedemdziesiąt",
     "english": "Seventy",
     "category": "Numbers",
     "cat_id": 70
-}
+},
 {
     "translated": "Osiemdziesiąt",
     "english": "Eighty",
     "category": "Numbers",
     "cat_id": 80
-}
+},
 {
     "translated": "Dziewięćdziesiąt",
     "english": "Ninety",
     "category": "Numbers",
     "cat_id": 90
-}
+},
 {
     "translated": "Sto",
     "english": "Hundred",
     "category": "Numbers",
     "cat_id": 100
-}
+},
 {
     "translated": "Tysiąc",
     "english": "Thousand",
     "category": "Numbers",
     "cat_id": 1000
-}
+},
 {
     "translated": "Milion",
     "english": "Million",
     "category": "Numbers",
     "cat_id": 1000000
-}
+},
 {
     "translated": "Kolory",
     "english": "Colours",
     "category": "Colors",
     "cat_id": 1
-}
+},
 {
     "translated": "Biały",
     "english": "White",
     "category": "Colors",
     "cat_id": 2
-}
+},
 {
     "translated": "Czarny",
     "english": "Black",
     "category": "Colors",
     "cat_id": 3
-}
+},
 {
     "translated": "Czerwony",
     "english": "Red",
     "category": "Colors",
     "cat_id": 4
-}
+},
 {
     "translated": "Żółty",
     "english": "Yellow",
     "category": "Colors",
     "cat_id": 5
-}
+},
 {
     "translated": "Zielony",
     "english": "Green",
     "category": "Colors",
     "cat_id": 6
-}
+},
 {
     "translated": "Niebieski",
     "english": "Blue",
     "category": "Colors",
     "cat_id": 7
-}
+},
 {
     "translated": "Pomarańczowy",
     "english": "Orange",
     "category": "Colors",
     "cat_id": 8
-}
+},
 {
     "translated": "Szary",
     "english": "Grey",
     "category": "Colors",
     "cat_id": 9
-}
+},
 {
     "translated": "Dni",
     "english": "Days",
     "category": "Days",
     "cat_id": 1
-}
+},
 {
     "translated": "Poniedziałek",
     "english": "Monday",
     "category": "Days",
     "cat_id": 2
-}
+},
 {
     "translated": "Wtorek",
     "english": "Tuesday",
     "category": "Days",
     "cat_id": 3
-}
+},
 {
     "translated": "Środa",
     "english": "Wednesday",
     "category": "Days",
     "cat_id": 4
-}
+},
 {
     "translated": "Czwartek",
     "english": "Thursday",
     "category": "Days",
     "cat_id": 5
-}
+},
 {
     "translated": "Piątek",
     "english": "Friday",
     "category": "Days",
     "cat_id": 6
-}
+},
 {
     "translated": "Sobota",
     "english": "Saturday",
     "category": "Days",
     "cat_id": 7
-}
+},
 {
     "translated": "Niedziela",
     "english": "Sunday",
     "category": "Days",
     "cat_id": 8
-}
+},
+{
+    "translated": "Helg",
+    "english": "Weekend",
+    "category": "Days",
+    "cat_id": 9,
+},
 {
     "translated": "Miesiące",
     "english": "Months",
     "category": "Months",
     "cat_id": 1
-}
+},
 {
     "translated": "Styczeń",
     "english": "January",
     "category": "Months",
     "cat_id": 2
-}
+},
 {
     "translated": "Luty",
     "english": "February",
     "category": "Months",
     "cat_id": 3
-}
+},
 {
     "translated": "Marzec",
     "english": "March",
     "category": "Months",
     "cat_id": 4
-}
+},
 {
     "translated": "Kwiecień",
     "english": "April",
     "category": "Months",
     "cat_id": 5
-}
+},
 {
     "translated": "Maj",
     "english": "May",
     "category": "Months",
     "cat_id": 6
-}
+},
 {
     "translated": "Czerwiec",
     "english": "June",
     "category": "Months",
     "cat_id": 7
-}
+},
 {
     "translated": "Lipiec",
     "english": "July",
     "category": "Months",
     "cat_id": 8
-}
+},
 {
     "translated": "Sierpień",
     "english": "August",
     "category": "Months",
     "cat_id": 9
-}
+},
 {
     "translated": "Wrzesień",
     "english": "September",
     "category": "Months",
     "cat_id": 10
-}
+},
 {
     "translated": "Październik",
     "english": "October",
     "category": "Months",
     "cat_id": 11
-}
+},
 {
     "translated": "Listopad",
     "english": "November",
     "category": "Months",
     "cat_id": 12
-}
+},
 {
     "translated": "Grudzień",
     "english": "December",
     "category": "Months",
     "cat_id": 13
-}
+},
 {
     "translated": "Ja",
     "english": "Me",
     "category": "Misc",
     "cat_id": 1
-}
+},
 {
     "translated": "Ty",
     "english": "You",
     "category": "Misc",
     "cat_id": 2
-}
+},
 {
     "translated": "Wy",
     "english": "You (Plural)",
     "category": "Misc",
     "cat_id": 3
-}
+},
 {
     "translated": "Oni",
     "english": "They",
     "category": "Misc",
     "cat_id": 4
-}
+},
 {
     "translated": "One",
     "english": "They (Girls)",
     "category": "Misc",
-    "cat_id": 5.0
-}
+    "cat_id": 5
+},
 {
     "translated": "Tamci",
     "english": "Those",
     "category": "Misc",
     "cat_id": 6
-}
+},
 {
     "translated": "Tamte",
     "english": "Those (Girls)",
     "category": "Misc",
-    "cat_id": 7.0
-}
+    "cat_id": 7
+},
 {
     "translated": "Czasy",
     "english": "Times",
     "category": "Times",
     "cat_id": 1
-}
+},
 {
     "translated": "Sekunda",
     "english": "Second",
     "category": "Times",
     "cat_id": 2
-}
+},
 {
     "translated": "Minuta",
     "english": "Minute",
     "category": "Times",
     "cat_id": 3
-}
+},
 {
     "translated": "Godzina",
     "english": "Hour",
     "category": "Times",
     "cat_id": 4
-}
+},
 {
     "translated": "Dzień",
     "english": "Day",
     "category": "Times",
     "cat_id": 5
-}
+},
 {
     "translated": "Tydzień",
     "english": "Week",
     "category": "Times",
     "cat_id": 6
-}
+},
 {
     "translated": "Miesiąc",
     "english": "Month",
     "category": "Times",
     "cat_id": 7
-}
+},
 {
     "translated": "Rok",
     "english": "Year",
     "category": "Times",
     "cat_id": 8
-}
+},
 {
     "translated": "Dekada",
     "english": "Decade",
     "category": "Times",
     "cat_id": 9
-}
+},
 {
     "translated": "Wiek",
     "english": "Century",
     "category": "Times",
     "cat_id": 10
-}
+},
 {
     "translated": "Cześć",
     "english": "Hello",
     "category": "Pleasantries",
     "cat_id": 1
-}
+},
 {
     "translated": "Dobranoc",
     "english": "Goodnight",
     "category": "Pleasantries",
     "cat_id": 2
-}
+},
 {
     "translated": "Dzień dobry",
     "english": "Good day",
     "category": "Pleasantries",
     "cat_id": 3
-}
+},
 {
     "translated": "Jak się masz?",
     "english": "How are you?",
     "category": "Pleasantries",
     "cat_id": 4
-}
+},
 {
     "translated": "Dziękuję",
     "english": "Thank you",
     "category": "Pleasantries",
     "cat_id": 5
-}
+},
 {
     "translated": "Przepraszam",
     "english": "Excuse me",
     "category": "Pleasantries",
     "cat_id": 6
-}
+},
 {
     "translated": "Lewo",
     "english": "Left",
     "category": "Directions",
     "cat_id": 1
-}
+},
 {
     "translated": "Prawo",
     "english": "Right",
     "category": "Directions",
     "cat_id": 2
-}
+},
 {
     "translated": "Prosto",
     "english": "Straight",
     "category": "Directions",
-    "cat_id": 3,
-}
+    "cat_id": 3
+},
 {
     "translated": "Tutaj",
     "english": "Here",
     "category": "Directions",
-    "cat_id": 4,
-}
+    "cat_id": 4
+},
 {
     "translated": "Tam",
     "english": "There",
     "category": "Directions",
-    "cat_id": 5,
-}
+    "cat_id": 5
+},
 {
     "translated": "Ludzie",
     "english": "People",
     "category": "People",
-    "cat_id": 0,
-}
+    "cat_id": 0
+},
 {
     "translated": "Przyjaciel",
     "english": "Friend",
     "category": "People",
-    "cat_id": 1,
-}
+    "cat_id": 1
+},
 {
     "translated": "Dziewczyna",
     "english": "Girl",
     "category": "People",
-    "cat_id": 2,
-}
+    "cat_id": 2
+},
 {
     "translated": "Chłopak",
     "english": "Boy",
     "category": "People",
-    "cat_id": 3,
-}
+    "cat_id": 3
+},
 {
     "translated": "Kobieta",
     "english": "Woman",
     "category": "People",
-    "cat_id": 4,
-}
+    "cat_id": 4
+},
 {
     "translated": "Mężczyzna",
     "english": "Man",
     "category": "People",
-    "cat_id": 5,
-}
+    "cat_id": 5
+},
 {
     "translated": "Żona",
     "english": "Wife",
     "category": "People",
-    "cat_id": 6,
-}
+    "cat_id": 6
+},
 {
     "translated": "Mąż",
     "english": "Husband",
     "category": "People",
-    "cat_id": 7,
+    "cat_id": 7
 }

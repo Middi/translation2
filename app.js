@@ -65,6 +65,33 @@ var norwegianSchema = new mongoose.Schema({
 var Norwegian = mongoose.model("norwegian", norwegianSchema);
 
 // MONGOOSE/MODEL CONFIG
+var testSchema = new mongoose.Schema({
+    english: String,
+    translated: String,
+    phonetic: String,
+    category: String,
+    cat_id: Number,
+    lang: String
+}, {collection: 'test'});
+
+var Test = mongoose.model("test", testSchema);
+
+
+
+// MONGOOSE/MODEL CONFIG
+var bulgarianSchema = new mongoose.Schema({
+    english: String,
+    translated: String,
+    phonetic: String,
+    category: String,
+    cat_id: Number,
+    lang: String
+}, {collection: 'bulgarian'});
+
+var Bulgarian = mongoose.model("bulgarian", bulgarianSchema);
+
+
+// MONGOOSE/MODEL CONFIG
 var polishSchema = new mongoose.Schema({
     english: String,
     translated: String,
@@ -90,6 +117,24 @@ app.get('/norwegian', function(req, res){
     }).sort({ cat_id: 1});
 });
 
+app.get('/test', function(req, res){
+    Test.find(function(err, data) {
+        res.render('lang', {
+            data: data,
+            lang: 'Test'
+        });
+    }).sort({ cat_id: 1});
+});
+
+app.get('/bulgarian', function(req, res){
+    Bulgarian.find(function(err, data) {
+        res.render('lang', {
+            data: data,
+            lang: 'Bulgarian'
+        });
+    }).sort({ cat_id: 1});
+});
+
 
 app.get('/polish', function(req, res){
     Polish.find(function(err, data) {
@@ -106,6 +151,15 @@ app.get('/norwegian/new', isLoggedIn, function(req, res){
         res.render('new', {
             data: data,
             lang: 'Norwegian'
+        });
+    });
+});
+
+app.get('/bulgarian/new', isLoggedIn, function(req, res){
+    Bulgarian.find( function(err, data) {
+        res.render('new', {
+            data: data,
+            lang: 'Bulgarian'
         });
     });
 });
@@ -134,6 +188,19 @@ app.post("/norwegian/entry", isLoggedIn, function(req, res){
 });
 
 // CREATE ROUTES
+app.post("/bulgarian/entry", isLoggedIn, function(req, res){
+    // Create Entry
+    Bulgarian.create(req.body.trans, function(err, newEntry){
+        if(err){
+            res.render("/bulgarian");
+        }
+        else {
+            res.redirect("/bulgarian/new");
+        }
+    })
+});
+
+// CREATE ROUTES
 app.post("/polish/entry", isLoggedIn, function(req, res){
     // Create Entry
     Polish.create(req.body.trans, function(err, newEntry){
@@ -153,6 +220,16 @@ app.get('/norwegian/edit/:id', isLoggedIn, function (req, res) {
         res.render('edit', {
             article: article,
             lang: 'Norwegian'
+        });
+    });
+});
+
+// Load Edit Form
+app.get('/bulgarian/edit/:id', isLoggedIn, function (req, res) {
+    Bulgarian.findById(req.params.id, function (err, article) {
+        res.render('edit', {
+            article: article,
+            lang: 'Bulgarian'
         });
     });
 });
@@ -214,6 +291,27 @@ app.post('/polish/edit/:id', function (req, res) {
     });
 });
 
+// Update Submit POST Route
+app.post('/bulgarian/edit/:id', function (req, res) {
+    let article = {};
+    article.translated = req.body.translated
+    article.english = req.body.english;
+    article.phonetic = req.body.phonetic;
+    article.category = req.body.category;
+    article.cat_id = req.body.cat_id;
+
+    let query = { _id: req.params.id };
+
+    Bulgarian.update(query, article, function (err) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        else {
+            res.redirect('/bulgarian');
+        }
+    });
+});
 
 // LOGIN ROUTES
 app.get("/login", function(req, res){
