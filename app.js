@@ -129,8 +129,7 @@ var Japanese = mongoose.model("japanese", japaneseSchema);
 
 app.get('/', function(req, res){
     res.render('index', {
-        collections: collections,
-        lang: collections[0]
+        collections: collections
     });
 });
 
@@ -171,7 +170,6 @@ app.get('/japanese', function(req, res){
         });
     }).sort({ cat_id: 1});
 });
-
 
 
 
