@@ -8,6 +8,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local');
 var passportLocalMongoose = require("passport-local-mongoose");
 const bodyParser = require('body-parser');
+const bcrypt = require('bcryptjs');
 var User = require("./models/user");
 
 var collections = [
@@ -42,7 +43,7 @@ dotenv.load({ path: '.env' });
 mongoose.connect(process.env.MONGO_URL);
 app.set("view engine", "pug");
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressSanitizer());
 
 // Set Public Folder
@@ -68,9 +69,9 @@ passport.deserializeUser(User.deserializeUser());
 // =====================
 // Check logged in
 // =====================
-app.use(function(req, res, next){
-   res.locals.currentUser = req.user;
-   next();
+app.use(function (req, res, next) {
+    res.locals.currentUser = req.user;
+    next();
 });
 
 
@@ -82,7 +83,7 @@ var norwegianSchema = new mongoose.Schema({
     category: String,
     cat_id: Number,
     lang: String
-}, {collection: 'norwegian'});
+}, { collection: 'norwegian' });
 
 var Norwegian = mongoose.model("norwegian", norwegianSchema);
 
@@ -95,7 +96,7 @@ var bulgarianSchema = new mongoose.Schema({
     category: String,
     cat_id: Number,
     lang: String
-}, {collection: 'bulgarian'});
+}, { collection: 'bulgarian' });
 
 var Bulgarian = mongoose.model("bulgarian", bulgarianSchema);
 
@@ -108,7 +109,7 @@ var polishSchema = new mongoose.Schema({
     category: String,
     cat_id: Number,
     lang: String
-}, {collection: 'polish'});
+}, { collection: 'polish' });
 
 var Polish = mongoose.model("polish", polishSchema);
 
@@ -121,60 +122,60 @@ var japaneseSchema = new mongoose.Schema({
     category: String,
     cat_id: Number,
     lang: String
-}, {collection: 'japanese'});
+}, { collection: 'japanese' });
 
 var Japanese = mongoose.model("japanese", japaneseSchema);
 
 
 
-app.get('/', function(req, res){
+app.get('/', function (req, res) {
     res.render('index', {
         collections: collections
     });
 });
 
-app.get('/norwegian', function(req, res){
-    Norwegian.find(function(err, data) {
+app.get('/norwegian', function (req, res) {
+    Norwegian.find(function (err, data) {
         res.render('lang', {
             data: data,
             lang: collections[0]
         });
-    }).sort({ cat_id: 1});
+    }).sort({ cat_id: 1 });
 });
 
-app.get('/bulgarian', function(req, res){
-    Bulgarian.find(function(err, data) {
+app.get('/bulgarian', function (req, res) {
+    Bulgarian.find(function (err, data) {
         res.render('lang', {
             data: data,
             lang: collections[2]
         });
-    }).sort({ cat_id: 1});
+    }).sort({ cat_id: 1 });
 });
 
 
-app.get('/polish', function(req, res){
-    Polish.find(function(err, data) {
+app.get('/polish', function (req, res) {
+    Polish.find(function (err, data) {
         res.render('lang', {
             data: data,
             lang: collections[1]
         });
-    }).sort({ cat_id: 1});
+    }).sort({ cat_id: 1 });
 });
 
 
-app.get('/japanese', function(req, res){
-    Japanese.find(function(err, data) {
+app.get('/japanese', function (req, res) {
+    Japanese.find(function (err, data) {
         res.render('lang', {
             data: data,
             lang: collections[3]
         });
-    }).sort({ cat_id: 1});
+    }).sort({ cat_id: 1 });
 });
 
 
 
-app.get('/norwegian/new', isLoggedIn, function(req, res){
-    Norwegian.find( function(err, data) {
+app.get('/norwegian/new', isLoggedIn, function (req, res) {
+    Norwegian.find(function (err, data) {
         res.render('new', {
             data: data,
             lang: 'Norwegian'
@@ -182,8 +183,8 @@ app.get('/norwegian/new', isLoggedIn, function(req, res){
     });
 });
 
-app.get('/bulgarian/new', isLoggedIn, function(req, res){
-    Bulgarian.find( function(err, data) {
+app.get('/bulgarian/new', isLoggedIn, function (req, res) {
+    Bulgarian.find(function (err, data) {
         res.render('new', {
             data: data,
             lang: 'Bulgarian'
@@ -191,8 +192,8 @@ app.get('/bulgarian/new', isLoggedIn, function(req, res){
     });
 });
 
-app.get('/polish/new', isLoggedIn, function(req, res){
-    Polish.find( function(err, data) {
+app.get('/polish/new', isLoggedIn, function (req, res) {
+    Polish.find(function (err, data) {
         res.render('new', {
             data: data,
             lang: 'Polish'
@@ -200,8 +201,8 @@ app.get('/polish/new', isLoggedIn, function(req, res){
     });
 });
 
-app.get('/japanese/new', isLoggedIn, function(req, res){
-    Japanese.find( function(err, data) {
+app.get('/japanese/new', isLoggedIn, function (req, res) {
+    Japanese.find(function (err, data) {
         res.render('new', {
             data: data,
             lang: 'Japanese'
@@ -211,10 +212,10 @@ app.get('/japanese/new', isLoggedIn, function(req, res){
 
 
 // CREATE ROUTES
-app.post("/norwegian/entry", isLoggedIn, function(req, res){
+app.post("/norwegian/entry", isLoggedIn, function (req, res) {
     // Create Entry
-    Norwegian.create(req.body.trans, function(err, newEntry){
-        if(err){
+    Norwegian.create(req.body.trans, function (err, newEntry) {
+        if (err) {
             res.render("/norwegian");
         }
         else {
@@ -224,10 +225,10 @@ app.post("/norwegian/entry", isLoggedIn, function(req, res){
 });
 
 // CREATE ROUTES
-app.post("/bulgarian/entry", isLoggedIn, function(req, res){
+app.post("/bulgarian/entry", isLoggedIn, function (req, res) {
     // Create Entry
-    Bulgarian.create(req.body.trans, function(err, newEntry){
-        if(err){
+    Bulgarian.create(req.body.trans, function (err, newEntry) {
+        if (err) {
             res.render("/bulgarian");
         }
         else {
@@ -237,10 +238,10 @@ app.post("/bulgarian/entry", isLoggedIn, function(req, res){
 });
 
 // CREATE ROUTES
-app.post("/polish/entry", isLoggedIn, function(req, res){
+app.post("/polish/entry", isLoggedIn, function (req, res) {
     // Create Entry
-    Polish.create(req.body.trans, function(err, newEntry){
-        if(err){
+    Polish.create(req.body.trans, function (err, newEntry) {
+        if (err) {
             res.render("/polish");
         }
         else {
@@ -250,10 +251,10 @@ app.post("/polish/entry", isLoggedIn, function(req, res){
 });
 
 // CREATE ROUTES
-app.post("/japanese/entry", isLoggedIn, function(req, res){
+app.post("/japanese/entry", isLoggedIn, function (req, res) {
     // Create Entry
-    Japanese.create(req.body.trans, function(err, newEntry){
-        if(err){
+    Japanese.create(req.body.trans, function (err, newEntry) {
+        if (err) {
             res.render("/japanese");
         }
         else {
@@ -307,10 +308,8 @@ app.get('/japanese/edit/:id', isLoggedIn, function (req, res) {
 // Update Submit POST Route
 app.post('/norwegian/edit/:id', function (req, res) {
     let article = {};
-    article.polish = req.body.polish;
-    article.norwegian = req.body.norwegian;
+    article.translated = req.body.translated;
     article.english = req.body.english;
-    article.phonetic = req.body.phonetic;
     article.category = req.body.category;
     article.cat_id = req.body.cat_id;
 
@@ -331,9 +330,8 @@ app.post('/norwegian/edit/:id', function (req, res) {
 // Update Submit POST Route
 app.post('/polish/edit/:id', function (req, res) {
     let article = {};
-    article.translated = req.body.translated
+    article.translated = req.body.translated;
     article.english = req.body.english;
-    article.phonetic = req.body.phonetic;
     article.category = req.body.category;
     article.cat_id = req.body.cat_id;
 
@@ -353,9 +351,8 @@ app.post('/polish/edit/:id', function (req, res) {
 // Update Submit POST Route
 app.post('/bulgarian/edit/:id', function (req, res) {
     let article = {};
-    article.translated = req.body.translated
+    article.translated = req.body.translated;
     article.english = req.body.english;
-    article.phonetic = req.body.phonetic;
     article.category = req.body.category;
     article.cat_id = req.body.cat_id;
 
@@ -375,9 +372,8 @@ app.post('/bulgarian/edit/:id', function (req, res) {
 // Update Submit POST Route
 app.post('/japanese/edit/:id', function (req, res) {
     let article = {};
-    article.translated = req.body.translated
+    article.translated = req.body.translated;
     article.english = req.body.english;
-    article.phonetic = req.body.phonetic;
     article.category = req.body.category;
     article.cat_id = req.body.cat_id;
 
@@ -395,8 +391,8 @@ app.post('/japanese/edit/:id', function (req, res) {
 });
 
 // LOGIN ROUTES
-app.get("/login", function(req, res){
-   res.render("login"); 
+app.get("/login", function (req, res) {
+    res.render("login");
 });
 
 
@@ -404,24 +400,69 @@ app.get("/login", function(req, res){
 app.post("/login", passport.authenticate("local", {
     successRedirect: "/norwegian",
     failureRedirect: "/login"
-}), function(req, res){
-   
+}), function (req, res) {
+
 });
 
 
 // Log Out Logic
-app.get("/logout", function(req,res){
+app.get("/logout", function (req, res) {
     req.logout();
     res.redirect("/");
 });
 
-function isLoggedIn(req, res, next){
-    if(req.isAuthenticated()){
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated()) {
         return next();
     }
     res.redirect("/login");
 }
 
+
+
+
+
+
+// Register Form
+app.get('/register', function (req, res) {
+    res.render('register');
+});
+
+// Register Proccess
+app.post('/register', function (req, res) {
+    const name = req.body.name;
+    const email = req.body.email;
+    const username = req.body.username;
+    const password = req.body.password;
+    const password2 = req.body.password2;
+
+
+    let newUser = new User({
+        name: name,
+        email: email,
+        username: username,
+        password: password
+    });
+
+    bcrypt.genSalt(10, function (err, salt) {
+        bcrypt.hash(newUser.password, salt, function (err, hash) {
+            if (err) {
+                console.log(err);
+            }
+            newUser.password = hash;
+            newUser.save(function (err) {
+                if (err) {
+                    console.log(err);
+                    return;
+                }
+                else {
+                    res.redirect('/');
+                }
+            });
+        });
+    });
+
+});
 
 
 

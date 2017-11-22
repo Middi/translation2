@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Language Champ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" value="notranslate">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+  </head>
+  <body>
+    <!-- Static navbar-->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container navvie">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><img class="flag" src="/images/norwegian.png">Language<span>Champ</span></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/polish">Polski</a></li>
+                <li><a href="/norwegian">Norwegian</a></li>
+                <li><a href="/bulgarian">Bulgarian</a></li>
+                <li><a href="/japanese">Japanese</a></li>
+              </ul>
+            </li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="form">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <h1>Register</h1>
+            <hr class="colorgraph">
+            <form method="POST" action="/register">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6"></div>
+                <div class="form-group">
+                  <input class="form-control input-lg" id="first_name" type="text" name="name" placeholder="Name" tabindex="1">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6"></div>
+                <div class="form-group">
+                  <input class="form-control input-lg" id="display_name" type="text" name="username" placeholder="Username" tabindex="2">
+                </div>
+                <div class="form-group">
+                  <input class="form-control input-lg" id="email" type="email" name="email" placeholder="Email Address" tabindex="3">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6"></div>
+                <div class="form-group">
+                  <input class="form-control input-lg" id="password" type="password" name="password" placeholder="Password" tabindex="4">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6"></div>
+                <div class="form-group">
+                  <input class="form-control input-lg" id="password_confirmation" type="password" name="password2" placeholder="Confirm Password" tabindex="5">
+                </div>
+              </div>
+              <hr class="colorgraph">
+              <div class="row">
+                <div class="col-xs-12 col-md-6"></div>
+                <input class="btn btn-blue btn-block btn-lg" type="submit" value="Register" tabindex="6">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
