@@ -77,9 +77,13 @@ var polishSchema = new mongoose.Schema({
 var Polish = mongoose.model("polish", polishSchema);
 
 
+app.get('/', function(req, res){
+    res.render('index');
+});
+
 app.get('/norwegian', function(req, res){
     Norwegian.find(function(err, data) {
-        res.render('index', {
+        res.render('lang', {
             data: data,
             lang: 'Norwegian'
         });
@@ -89,7 +93,7 @@ app.get('/norwegian', function(req, res){
 
 app.get('/polish', function(req, res){
     Polish.find(function(err, data) {
-        res.render('index', {
+        res.render('lang', {
             data: data,
             lang: 'Polish'
         });

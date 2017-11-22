@@ -74,6 +74,17 @@ body {
 .container {
   max-width: 920px; }
 
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
+.card {
+  height: 300px;
+  width: 250px;
+  margin: 20px;
+  border: 1px solid grey; }
+
 .navvie {
   max-width: 1080px; }
 

@@ -2,48 +2,8 @@ extends layout
 
 block content
     .container.container-main
-        .live-translate-container
-            textarea(id="source" class="translate-box" placeholder="Type English here")
-            .switches
-                .sw1
-                    p#sw1-p English
-                div(id="switch", class="switch", attr=lang)
-                    i.fa.fa-arrow-circle-o-right.fa-lg
-                .sw2
-                    p#sw2-p= lang
-            div(id="output" class="translate-box output")
-        // Nav tabs
-        - var cat = ['Numbers', 'Times', 'Days', 'Months', 'Colors', 'Pleasantries', 'Directions', 'People', 'Misc']
-        ul.nav.nav-tabs(role='tablist')
-            if currentUser
-                li
-                    a(href=lang.toLowerCase()+'/new')
-                        i.fa.fa-plus.fa-lg(aria-hidden="true")
-            each val in cat
-                li(id=val.toLowerCase()+'-tab', class='tabs', role='presentation')
-                    a(href='#'+val.toLowerCase(), aria-controls="profile", role='tab', data-toggle='tab')= val
-                
-        // Tab panes
-
-
-
-        .tab-content
-            each val in cat
-                div(id=val.toLowerCase(), class='tab-pane', role='tabpanel')
-                    table.table.table-bordered.table-striped
-                        thead
-                            tr
-                                th English
-                                th= lang
-                                if currentUser
-                                    th.edit Edit
-                        tbody
-                            each datas, i in data
-                                if datas.category == val && datas.translated
-                                    tr
-                                        td= datas.english
-                                        td= datas.translated
-                                        if currentUser
-                                            td.edit-cell
-                                                a(href=lang.toLowerCase()+"/edit/"+datas._id) 
-                                                    i.fa.fa-pencil-square-o.fa-lg( aria-hidden="true")
+        .flex
+            .card
+                a(href="/norwegian") Norwegian
+            .card
+                a(href="/polish") Polish

@@ -40,13 +40,22 @@ body {
     margin-bottom: 160px;
 }
 
-.container {
-    max-width: 920px;
+.container {max-width: 920px}
+
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
-.navvie {
-    max-width: 1080px;
+.card {
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+    border: 1px solid grey;
 }
+
+.navvie {max-width: 1080px}
 
 .live-translate-container {
     display: flex;
