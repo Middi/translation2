@@ -13,10 +13,7 @@ var User = require("./models/user");
 
 var port = process.env.PORT || 3000;
 
-
-/**
- * Load environment variables from .env file, where API keys and passwords are configurededit
- */
+/* Load environment variables from .env file */
 dotenv.load({ path: '.env' });
 
 // APP CONFIG
@@ -54,18 +51,6 @@ app.use(function(req, res, next){
    next();
 });
 
-
-// MONGOOSE/MODEL CONFIG
-// var transSchema = new mongoose.Schema({
-//     polish: String,
-//     english: String,
-//     phonetic: String,
-//     category: String,
-//     cat_id: Number,
-//     norwegian: String
-// }, {collection: 'polish'});
-
-// var Trans = mongoose.model("polish", transSchema);
 
 // MONGOOSE/MODEL CONFIG
 var norwegianSchema = new mongoose.Schema({
@@ -107,7 +92,7 @@ app.get('/polish', function(req, res){
         res.render('index', {
             data: data,
             lang: 'Polish'
-    });
+        });
     }).sort({ cat_id: 1});
 });
 
@@ -132,7 +117,7 @@ app.get('/polish/new', isLoggedIn, function(req, res){
 
 
 // CREATE ROUTES
-app.post("/norwegian/entry", function(req, res){
+app.post("/norwegian/entry", isLoggedIn, function(req, res){
     // Create Entry
     Norwegian.create(req.body.trans, function(err, newEntry){
         if(err){
@@ -145,7 +130,7 @@ app.post("/norwegian/entry", function(req, res){
 });
 
 // CREATE ROUTES
-app.post("/polish/entry", function(req, res){
+app.post("/polish/entry", isLoggedIn, function(req, res){
     // Create Entry
     Polish.create(req.body.trans, function(err, newEntry){
         if(err){
@@ -159,7 +144,7 @@ app.post("/polish/entry", function(req, res){
 
 
 // Load Edit Form
-app.get('/norwegian/edit/:id', function (req, res) {
+app.get('/norwegian/edit/:id', isLoggedIn, function (req, res) {
     Norwegian.findById(req.params.id, function (err, article) {
         res.render('edit', {
             article: article,
@@ -169,7 +154,7 @@ app.get('/norwegian/edit/:id', function (req, res) {
 });
 
 // Load Edit Form
-app.get('/polish/edit/:id', function (req, res) {
+app.get('/polish/edit/:id', isLoggedIn, function (req, res) {
     Polish.findById(req.params.id, function (err, article) {
         res.render('edit', {
             article: article,
