@@ -1,6 +1,7 @@
 extends layout
 
 block content
+    - var cat = ['Numbers', 'Times', 'Days', 'Months', 'Colors', 'Pleasantries', 'Directions', 'People', 'Misc']
     .container
         h1.text-center Edit
 
@@ -19,16 +20,12 @@ block content
                         .row
                             .form-group
                                 label Category
-                                select.form-control(type='text', name='category' value=article.category)
-                                    option Numbers
-                                    option Times
-                                    option Days
-                                    option Months
-                                    option Colors
-                                    option Pleasantries
-                                    option Directions
-                                    option People
-                                    option Misc
+                                select.form-control(id="selection" type='text', name='category' value=article.category)
+                                    each val in cat
+                                        if article.category == val
+                                            option(selected='selected')= val
+                                        else
+                                            option= val
                         .row
                             .form-group
                                 label Position
