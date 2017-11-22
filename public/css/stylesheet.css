@@ -80,10 +80,17 @@ body {
   justify-content: center; }
 
 .card {
-  height: 300px;
-  width: 250px;
-  margin: 20px;
-  border: 1px solid grey; }
+  margin: 50px;
+  cursor: pointer;
+  padding: 4px;
+  border: rgba(248, 248, 248, 0) 4px solid;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+  cursor: pointer; }
+  .card:hover {
+    border: rgba(32, 166, 231, 0.8) 4px solid; }
+  .card img {
+    height: 125px; }
 
 .navvie {
   max-width: 1080px; }
