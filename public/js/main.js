@@ -15,13 +15,7 @@ $('#numbers-tab').addClass('active');
 $('.tab-pane:first-child').addClass('active');
 
 // sets language for text
-var language = 'Polish';
-
-// sets flags
-if (window.location.href.indexOf("norwegian") > -1) {
-  $('.flag').attr('src', '/images/norway.png');
-  language = 'Norwegian';
-}
+var language;
 
 // shows tabs from url
 $(function () {
@@ -33,11 +27,21 @@ $(function () {
 var langAPI;
 
 function langSwitch() {
-  if (lanSwitch.getAttribute("attr") == 'Polish') {
+  if (lanSwitch.getAttribute("attr") == 'pl') {
     langAPI = 'pl';
+    language = 'Polish';
+  }
+  else if (lanSwitch.getAttribute("attr") == 'no') {
+    langAPI = 'no';
+    language = 'Norwegian';
+  }
+  else if (lanSwitch.getAttribute("attr") == 'ja') {
+    langAPI = 'ja';
+    language = 'Japanese';
   }
   else {
-    langAPI = 'no';
+    langAPI = 'bg';
+    language = 'Bulgarian';
   }
 }
 langSwitch();

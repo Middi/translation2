@@ -10,6 +10,28 @@ var passportLocalMongoose = require("passport-local-mongoose");
 const bodyParser = require('body-parser');
 var User = require("./models/user");
 
+var collections = [
+    {
+        lang: 'Norwegian',
+        abbr: 'no',
+        flag: '/images/norway.png'
+    },
+    {
+        lang: 'Polish',
+        abbr: 'pl',
+        flag: '/images/poland.png'
+    },
+    {
+        lang: 'Bulgarian',
+        abbr: 'bg',
+        flag: '/images/bulgaria.png'
+    },
+    {
+        lang: 'Japanese',
+        abbr: 'ja',
+        flag: '/images/japanese.png'
+    }
+]
 
 var port = process.env.PORT || 3000;
 
@@ -64,19 +86,6 @@ var norwegianSchema = new mongoose.Schema({
 
 var Norwegian = mongoose.model("norwegian", norwegianSchema);
 
-// MONGOOSE/MODEL CONFIG
-var testSchema = new mongoose.Schema({
-    english: String,
-    translated: String,
-    phonetic: String,
-    category: String,
-    cat_id: Number,
-    lang: String
-}, {collection: 'test'});
-
-var Test = mongoose.model("test", testSchema);
-
-
 
 // MONGOOSE/MODEL CONFIG
 var bulgarianSchema = new mongoose.Schema({
@@ -104,24 +113,32 @@ var polishSchema = new mongoose.Schema({
 var Polish = mongoose.model("polish", polishSchema);
 
 
+// MONGOOSE/MODEL CONFIG
+var japaneseSchema = new mongoose.Schema({
+    english: String,
+    translated: String,
+    phonetic: String,
+    category: String,
+    cat_id: Number,
+    lang: String
+}, {collection: 'japanese'});
+
+var Japanese = mongoose.model("japanese", japaneseSchema);
+
+
+
 app.get('/', function(req, res){
-    res.render('index');
+    res.render('index', {
+        collections: collections,
+        lang: collections[0]
+    });
 });
 
 app.get('/norwegian', function(req, res){
     Norwegian.find(function(err, data) {
         res.render('lang', {
             data: data,
-            lang: 'Norwegian'
-        });
-    }).sort({ cat_id: 1});
-});
-
-app.get('/test', function(req, res){
-    Test.find(function(err, data) {
-        res.render('lang', {
-            data: data,
-            lang: 'Test'
+            lang: collections[0]
         });
     }).sort({ cat_id: 1});
 });
@@ -130,7 +147,7 @@ app.get('/bulgarian', function(req, res){
     Bulgarian.find(function(err, data) {
         res.render('lang', {
             data: data,
-            lang: 'Bulgarian'
+            lang: collections[2]
         });
     }).sort({ cat_id: 1});
 });
@@ -140,10 +157,22 @@ app.get('/polish', function(req, res){
     Polish.find(function(err, data) {
         res.render('lang', {
             data: data,
-            lang: 'Polish'
+            lang: collections[1]
         });
     }).sort({ cat_id: 1});
 });
+
+
+app.get('/japanese', function(req, res){
+    Japanese.find(function(err, data) {
+        res.render('lang', {
+            data: data,
+            lang: collections[3]
+        });
+    }).sort({ cat_id: 1});
+});
+
+
 
 
 app.get('/norwegian/new', isLoggedIn, function(req, res){
@@ -169,6 +198,15 @@ app.get('/polish/new', isLoggedIn, function(req, res){
         res.render('new', {
             data: data,
             lang: 'Polish'
+        });
+    });
+});
+
+app.get('/japanese/new', isLoggedIn, function(req, res){
+    Japanese.find( function(err, data) {
+        res.render('new', {
+            data: data,
+            lang: 'Japanese'
         });
     });
 });
@@ -213,6 +251,19 @@ app.post("/polish/entry", isLoggedIn, function(req, res){
     })
 });
 
+// CREATE ROUTES
+app.post("/japanese/entry", isLoggedIn, function(req, res){
+    // Create Entry
+    Japanese.create(req.body.trans, function(err, newEntry){
+        if(err){
+            res.render("/japanese");
+        }
+        else {
+            res.redirect("/japanese/new");
+        }
+    })
+});
+
 
 // Load Edit Form
 app.get('/norwegian/edit/:id', isLoggedIn, function (req, res) {
@@ -240,6 +291,16 @@ app.get('/polish/edit/:id', isLoggedIn, function (req, res) {
         res.render('edit', {
             article: article,
             lang: 'Polish'
+        });
+    });
+});
+
+// Load Edit Form
+app.get('/japanese/edit/:id', isLoggedIn, function (req, res) {
+    Japanese.findById(req.params.id, function (err, article) {
+        res.render('edit', {
+            article: article,
+            lang: 'Japanese'
         });
     });
 });
@@ -309,6 +370,28 @@ app.post('/bulgarian/edit/:id', function (req, res) {
         }
         else {
             res.redirect('/bulgarian');
+        }
+    });
+});
+
+// Update Submit POST Route
+app.post('/japanese/edit/:id', function (req, res) {
+    let article = {};
+    article.translated = req.body.translated
+    article.english = req.body.english;
+    article.phonetic = req.body.phonetic;
+    article.category = req.body.category;
+    article.cat_id = req.body.cat_id;
+
+    let query = { _id: req.params.id };
+
+    Japanese.update(query, article, function (err) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        else {
+            res.redirect('/japanese');
         }
     });
 });

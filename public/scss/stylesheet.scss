@@ -46,10 +46,11 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
-    margin: 50px;
+    margin: 10px;
     cursor: pointer;
     padding: 4px;
     border: rgba(248, 248, 248, 0) 4px solid;
@@ -57,7 +58,7 @@ body {
     transition: all 0.3s ease-in;
     cursor: pointer;
     &:hover {border: $brand 4px solid;}
-    img {height: 125px;}
+    img {height: 100px;}
 }
 
 .navvie {max-width: 1080px}

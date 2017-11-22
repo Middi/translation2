@@ -3,9 +3,7 @@ extends layout
 block content
     .container.container-main
         .flex
-            .card
-                a(href="/norwegian")
-                    img(src="/images/norway.png", alt="norway")
-            .card
-                a(href="/polish")
-                    img(src="/images/poland.png", alt="norway")
+            each val in collections
+                .card
+                    a(href='/'+val.lang)
+                        img(src="/images/"+val.lang+".png", alt=val.lang)

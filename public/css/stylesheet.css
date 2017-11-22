@@ -77,10 +77,11 @@ body {
 .flex {
   display: flex;
   width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .card {
-  margin: 50px;
+  margin: 10px;
   cursor: pointer;
   padding: 4px;
   border: rgba(248, 248, 248, 0) 4px solid;
@@ -90,7 +91,7 @@ body {
   .card:hover {
     border: rgba(32, 166, 231, 0.8) 4px solid; }
   .card img {
-    height: 125px; }
+    height: 100px; }
 
 .navvie {
   max-width: 1080px; }

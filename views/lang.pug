@@ -7,17 +7,17 @@ block content
             .switches
                 .sw1
                     p#sw1-p English
-                div(id="switch", class="switch", attr=lang)
+                div(id="switch", class="switch", attr=lang.abbr)
                     i.fa.fa-arrow-circle-o-right.fa-lg
                 .sw2
-                    p#sw2-p= lang
+                    p#sw2-p= lang.lang
             div(id="output" class="translate-box output")
         // Nav tabs
         - var cat = ['Numbers', 'Times', 'Days', 'Months', 'Colors', 'Pleasantries', 'Directions', 'People', 'Misc']
         ul.nav.nav-tabs(role='tablist')
             if currentUser
                 li
-                    a(href=lang.toLowerCase()+'/new')
+                    a(href=lang.lang.toLowerCase()+'/new')
                         i.fa.fa-plus.fa-lg(aria-hidden="true")
             each val in cat
                 li(id=val.toLowerCase()+'-tab', class='tabs', role='presentation')
@@ -31,12 +31,12 @@ block content
                         thead
                             tr
                                 th English
-                                th= lang
+                                th= lang.lang
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data
-                                if datas.category == val && datas.translated
+                            each datas in data
+                                if datas.category == val && datas.translated != null
                                     tr
                                         td= datas.english
                                         td= datas.translated
