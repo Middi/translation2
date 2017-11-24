@@ -19,11 +19,11 @@ html(lang="pl")
                         span.icon-bar
                     a.navbar-brand(href='/')
                         if lang
-                            img.flag(src="/images/"+lang.lang+".png")
+                            img.flag(src=lang.flag)
                             | Language
                             span Champ
                         else
-                            img.flag(src="/images/norwegian.png")
+                            img.flag.trophy(src="/images/trophy.png")
                             | Language
                             span Champ
 

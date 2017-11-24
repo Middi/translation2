@@ -15,17 +15,17 @@ var collections = [
     {
         lang: 'Norwegian',
         abbr: 'no',
-        flag: '/images/norway.png'
+        flag: '/images/norwegian.png'
     },
     {
         lang: 'Polish',
         abbr: 'pl',
-        flag: '/images/poland.png'
+        flag: '/images/polish.png'
     },
     {
         lang: 'Bulgarian',
         abbr: 'bg',
-        flag: '/images/bulgaria.png'
+        flag: '/images/bulgarian.png'
     },
     {
         lang: 'Japanese',

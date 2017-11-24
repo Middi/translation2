@@ -17,11 +17,16 @@ body {
     background-color: $brand;
     background: $brand linear-gradient(180deg, #20a8e9, rgba(30, 158, 220, .5)) repeat-x;}
 
-.navbar-brand>img {
+.navbar-brand .flag {
     display: inline-block;
     width: 24px;
     height: auto;
     margin: 0 4px 2px;
+}
+
+.navbar-brand .trophy {
+    width: auto;
+    height: 24px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {border: none}
